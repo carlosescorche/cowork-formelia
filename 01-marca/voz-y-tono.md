@@ -45,6 +45,7 @@ hype-bro de IA. **Cercana, directa, honesta.**
 | Errores | Responsable, sin culpar al usuario | "No pudimos guardar tu cambio. Reintentamos en unos segundos." |
 | Soporte / email | Humano, con nombre | "Te leo y te respondo hoy. — Carlos" |
 | Build in public (X/LinkedIn) | Franco, con datos reales | "Mes 1: 300 registros, 41% activación. Lo que funcionó y lo que no →" |
+| Founder a cámara (historias) | **Contado, no vendido:** proceso y propósito en primera persona; sin preguntas retóricas ni hooks de anuncio (esos son para reel/TikTok ante desconocidos) | "Llevo 8 meses construyendo esto. Déjame contarte por qué existe." |
 
 ## Qué NO decir jamás
 

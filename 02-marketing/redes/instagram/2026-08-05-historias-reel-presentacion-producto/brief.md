@@ -18,9 +18,9 @@ y las respuestas que mueren en un Sheets.
 ## 1. Qué grabar (checklist de tomas, antes de escribir nada encima)
 
 **A cámara (selfie, luz natural, audio limpio):**
-- [ ] T1 — Hook: tú hablando 5–8s (guion en S1).
-- [ ] T2 — Presentación: tú hablando 10s (guion en S2).
-- [ ] T3 — Cierre/CTA: tú hablando 8s (guion en S9).
+- [ ] T1 — Apertura: tú hablando 6–8s (guion en S1).
+- [ ] T2 — El problema y el propósito: tú hablando ~20s seguidos (luego se corta en S2 y S3).
+- [ ] T3 — Cierre: tú hablando 8s (guion en S9).
 
 **Pantalla del teléfono (grabación de pantalla nativa, producto REAL, sin datos falsos):**
 - [ ] P1 — Crear con IA: escribes (o dictas con el micrófono) el prompt:
@@ -46,20 +46,24 @@ para que P7 tenga algo que mostrar, teléfono en no molestar, idioma de la app e
 > Regla: texto en pantalla SIEMPRE (se mira sin audio). Tipografía nativa de IG limpia, texto
 > corto arriba o abajo, nunca tapando la UI del producto.
 
+> Tono: **contado, no vendido.** Es el founder enseñando lo que construyó y por qué, en primera
+> persona — registro build-in-public. Nada de preguntas retóricas de vendedor ni frases de
+> anuncio; el arco es proceso → propósito → problema → demo → cierre honesto.
+
 | # | Toma | Texto en pantalla | Guion hablado / nota |
 | --- | --- | --- | --- |
-| S1 | T1 (a cámara) | **"¿Cuánta gente abandona tus formularios a la mitad?"** | "Si mandas formularios y la mitad no los termina… no es tu culpa. Es el formulario. Mira esto." |
-| S2 | T2 (a cámara) | "Llevo 8 meses construyendo esto 👇" | "Soy Carlos. Construí Formelia: formularios que la gente sí termina. Te enseño cómo funciona en 6 historias." |
-| S3 | P1 | "1. Descríbelo con tus palabras (o dictalo)" → corregir: "o díctalo" | Sin voz o voz en off corta: "Le escribes lo que necesitas, como se lo dirías a una persona." |
-| S4 | P2 | "2. La IA arma el primer borrador. Tú decides qué se queda." | Mostrar el formulario completo en el editor, scroll rápido. |
-| S5 | P3 | "3. Tu marca en cada detalle" | "Tus colores, tu logo. El formulario se ve tuyo, no de la herramienta." |
-| S6 | P4 | "4. Publica: enlace propio + código QR" | Botón publicar → URL → QR. |
-| S7 | P5 + P6 | "5. Compártelo por WhatsApp. Responder se siente así 👇" | Enviar por WhatsApp → cortar a la vista del respondedor: una pregunta a la vez, progreso visible. |
-| S8 | P7 | "6. La IA lee las respuestas por ti" | "Y cuando llegan las respuestas, no abres un Excel: le preguntas a la IA qué está pasando." |
-| S9 | T3 (a cámara) | **Teaser:** "Lanzamos el 15 de agosto 🗓️" + sticker de cuenta regresiva | "Esto es Formelia. Gratis, sin tarjeta, y en tu idioma. Lanzamos el 15 de agosto — sígueme para verlo primero." |
+| S1 | T1 (a cámara) | "Llevo 8 meses construyendo esto 👇" | "Llevo 8 meses construyendo algo y hoy por fin puedo enseñártelo. Se llama Formelia. Déjame contarte qué es y por qué existe." |
+| S2 | T2 (a cámara) | "Por qué existe" | "Todo negocio vive pidiendo información: inscripciones, citas, pedidos, feedback. Y casi siempre termina igual: un formulario que la gente abandona a la mitad, y respuestas regadas en un Excel que nadie mira." |
+| S3 | T2 (a cámara, continuación) | "Para qué sirve" | "Formelia existe para eso: creas el formulario describiéndolo con tus palabras, lo compartes donde está tu gente, y te enteras de lo que respondieron sin perseguir a nadie. Te muestro el flujo completo 👇" |
+| S4 | P1 | "Lo describes con tus palabras (o se lo dictas)" | Sin voz o voz en off corta: "Le escribes lo que necesitas, como se lo dirías a una persona." |
+| S5 | P2 + P3 | "La IA arma el borrador. Tú decides qué se queda — con tu marca" | Formulario completo en el editor, scroll rápido → colores/logo. "El formulario se ve tuyo, no de la herramienta." |
+| S6 | P4 + P5 | "Publicas: enlace propio + QR → WhatsApp" | Botón publicar → URL → QR → enviándolo por WhatsApp. |
+| S7 | P6 | "Responder se siente así: una pregunta a la vez" | Vista del respondedor: una pregunta a la vez, progreso visible. "Por eso la gente sí lo termina." |
+| S8 | P7 | "Y la IA te resume las respuestas" | "Cuando llegan las respuestas, no abres un Excel: le preguntas a la IA qué está pasando y te contesta con lo que encontró." |
+| S9 | T3 (a cámara) | **"Lanzamos el 15 de agosto 🗓️"** + sticker de cuenta regresiva | "Eso es Formelia. Gratis, sin tarjeta y en tu idioma. Lanzamos el 15 de agosto — por aquí te voy mostrando el resto." |
 
-**Stickers:** S1 → sticker de encuesta ("¿Te pasa? Sí / Uf, siempre") para conversación;
-S9 → cuenta regresiva al 15-ago-2026 09:00 (hora CDMX).
+**Stickers:** S2 → sticker de encuesta opcional y en tono de conversación ("¿Te pasa con tus
+formularios? Sí / Todos los días"); S9 → cuenta regresiva al 15-ago-2026 09:00 (hora CDMX).
 
 **Variante post-lanzamiento de S9:** texto "Gratis, sin tarjeta → desliza" + sticker de enlace
 con `https://formelia.com/?utm_source=instagram&utm_medium=social&utm_campaign=lanzamiento`
