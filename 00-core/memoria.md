@@ -34,6 +34,9 @@
 - **2026-07-30** — Se crea Formelia HQ (`cowork/`): estructura de áreas, estrategias iniciales
   por equipo y skills. Las estrategias de marca, marketing, comunicación, growth, research y
   operaciones quedan redactadas en v1 y listas para ejecutar.
+- **2026-07-30** — Primera pieza de contenido lista para producir: historias + reel de
+  presentación del producto por el founder (Instagram, semana teaser — brief completo con
+  guion, tomas y CTA en `02-marketing/redes/instagram/`).
 
 ## Aprendizajes acumulados
 

@@ -9,9 +9,11 @@
 | --- | --- | --- | --- | --- |
 | Lun 4 | Instagram | Educación | Carrusel: "Por qué nadie termina tus formularios (y cómo arreglarlo)" | 💡 |
 | Lun 4 | X | Build in public | Hilo: "En 11 días lanzo Formelia. Esto es lo que construí en 8 meses" | 💡 |
+| Mar 5 | Instagram | Producto | [Historias (9): presentación del producto por el founder](redes/instagram/2026-08-05-historias-reel-presentacion-producto/brief.md) | ✍️ |
 | Mar 5 | TikTok | Producto | Demo 30s: prompt por voz → formulario publicado | 💡 |
 | Mié 6 | LinkedIn | Educación | Post: "El intake de clientes que usan las agencias que cobran más" | 💡 |
 | Jue 7 | Instagram | Producto | Reel: "Tu marca en cada detalle" (personalización IA) | 💡 |
+| Vie 8 | Instagram | Producto | [Reel: presentación del producto (recorte de las historias del mar 5)](redes/instagram/2026-08-05-historias-reel-presentacion-producto/brief.md) | ✍️ |
 | Vie 8 | TikTok | Educación | "3 errores en tu formulario de inscripción" | 💡 |
 | Sáb 9 | Instagram | Build in public | Story serie: countdown al lanzamiento | 💡 |
 
