@@ -1,9 +1,9 @@
 # Formelia HQ — Entorno de gestión de la empresa
 
 Este repositorio es el **cuartel general de Formelia como empresa**. Aquí vive todo lo que no es
-código: propósito, estrategia, marca, marketing, comunicación, growth, research y operaciones.
-El producto y su documentación técnica viven en [`formelia-app`](../formelia-app) — este repo
-gobierna *la empresa que opera ese producto*.
+código: propósito, estrategia, marca, operaciones, diseño, marketing, growth, producto y
+arquitectura. El producto y su documentación técnica viven en
+[`formelia-app`](../formelia-app) — este repo gobierna *la empresa que opera ese producto*.
 
 > **Qué es Formelia:** la plataforma AI-first de formularios y captura de datos para el mundo
 > hispanohablante. "Formularios que la gente sí termina." Free $0 · Pro $10 · Team $25.
@@ -28,14 +28,15 @@ gobierna *la empresa que opera ese producto*.
 ```
 cowork/
 ├── 00-core/            Dirección (CEO): propósito, visión, estrategia, posicionamiento,
-│                       métricas, memoria viva y log de decisiones
-├── 01-marca/           Marca y diseño: estrategia de marca, identidad visual, voz y tono, assets
-├── 02-marketing/       Marketing: estrategia, calendario editorial, redes (una carpeta por red),
+│                       métricas, memoria viva, log de decisiones — e incluye:
+│   ├── marca/          Identidad de marca: estrategia, identidad visual, voz y tono
+│   └── operaciones/    Legal y finanzas: bloqueantes de lanzamiento, economía de IA
+├── 01-diseno/          Diseño: producción de piezas, plantillas y assets (ejecuta la marca)
+├── 02-marketing/       Marketing: estrategia (en reinicio), calendario editorial, redes,
 │                       campañas, blog/SEO
-├── 03-comunicacion/    Comunicación: email, prensa, comunidad
-├── 04-growth/          Distribución y crecimiento: canales, experimentos, partners
-├── 05-research/        Investigación: competencia, entrevistas a usuarios, mercado
-├── 06-operaciones/     Operaciones: legal, finanzas
+├── 03-growth/          Distribución y crecimiento: canales, experimentos, partners, comunidades
+├── 04-producto/        Producto: PRDs, priorización, UX (el código vive en formelia-app)
+├── 05-arquitectura/    Arquitectura: specs técnicos, ADRs, seguridad, costos de IA
 └── .claude/skills/     Un skill (rol experto) por equipo
 ```
 
@@ -43,13 +44,12 @@ cowork/
 
 | Skill | Rol | Trabaja sobre |
 | --- | --- | --- |
-| `/ceo` | CEO / estratega principal | `00-core/` |
-| `/marca` | Director de marca y diseño | `01-marca/` |
+| `/ceo` | CEO / estratega principal (incluye marca y operaciones) | `00-core/` |
+| `/diseno` | Diseñador | `01-diseno/` |
 | `/marketing` | Estratega de marketing y contenidos | `02-marketing/` |
-| `/comunicacion` | Responsable de comunicación | `03-comunicacion/` |
-| `/growth` | Growth lead | `04-growth/` |
-| `/research` | Analista de investigación | `05-research/` |
-| `/operaciones` | Operaciones, legal y finanzas | `06-operaciones/` |
+| `/growth` | Growth lead | `03-growth/` |
+| `/producto` | Product manager | `04-producto/` |
+| `/arquitectura` | Arquitecto de software | `05-arquitectura/` |
 
 ## Relación con `formelia-app`
 

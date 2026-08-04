@@ -1,8 +1,11 @@
 # CLAUDE.md — Formelia HQ
 
-Este repo es el entorno de gestión de Formelia como empresa (estrategia, marca, marketing,
-comunicación, growth, research, operaciones). No contiene código de producto: el producto vive en
-`../formelia-app`.
+Este repo es el entorno de gestión de Formelia como empresa. No contiene código de producto:
+el producto vive en `../formelia-app`.
+
+Áreas (desde la reestructuración del 2026-08-04): `00-core/` (dirección — incluye `marca/` y
+`operaciones/`), `01-diseno/`, `02-marketing/`, `03-growth/`, `04-producto/`,
+`05-arquitectura/`.
 
 ## Reglas de trabajo
 
@@ -25,7 +28,7 @@ comunicación, growth, research, operaciones). No contiene código de producto: 
 6. **Idioma:** todo en español. El español es idioma primario de Formelia por estrategia
    ("el español no es una traducción").
 
-## Reglas de marca innegociables (resumen — detalle en `01-marca/`)
+## Reglas de marca innegociables (resumen — detalle en `00-core/marca/`)
 
 - Color primario: Forest Teal `#00786f` (familia teal 50–950). Éxito = teal, **no verde**.
 - Tipografía: **Lexend** (títulos, branding) + **Geist** (cuerpo, UI).

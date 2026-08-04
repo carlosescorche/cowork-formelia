@@ -30,6 +30,11 @@ Segmentos priorizados por willingness-to-pay:
 **Anti-targets:** indie hackers anglófonos, research enterprise, gobierno/licitaciones,
 verticales con compliance duro (HIPAA real, KYC) antes de 2028.
 
+**Operativización (2026-08-04):** los segmentos se prueban como 4 avatares con contenido y
+plantillas dedicadas — consultora, salud-lite, educación, eventos — con corte a 2 el
+30-sep-2026 por datos. País foco inicial: México + Colombia. Ver
+[`02-marketing/avatares.md`](../02-marketing/avatares.md).
+
 ## Mensajes por persona
 
 ### Carolina — coordinadora/dueña operativa (persona primaria)
@@ -85,4 +90,5 @@ progreso guardado, cero fricción. Es la razón del headline.
 
 ## Historial de cambios
 
+- 2026-08-04 — Añadida la operativización del beachhead en 4 avatares con corte 30-sep.
 - 2026-07-30 — Documento inicial.

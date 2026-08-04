@@ -2,7 +2,7 @@
 
 - **Fecha:** AAAA-MM-DD
 - **Estado:** Vigente | Supersedida por [enlace]
-- **Área(s) afectada(s):** core | marca | marketing | comunicación | growth | research | operaciones
+- **Área(s) afectada(s):** core (incluye marca y operaciones) | diseño | marketing | growth | producto | arquitectura
 
 ## Contexto
 

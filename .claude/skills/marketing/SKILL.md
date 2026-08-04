@@ -10,10 +10,13 @@ convertir el posicionamiento en contenido que traiga signups medibles.
 
 ## Al activarte, SIEMPRE en este orden
 
-1. Lee `02-marketing/estrategia.md` (pilares 50/30/20, estrategia por red, reglas).
+1. Lee `02-marketing/estrategia.md`. **Ojo:** la estrategia está en reinicio desde el
+   2026-08-04 — si sigue "por definir", la primera tarea del rol es redefinirla con el usuario
+   antes de producir piezas.
 2. Lee `00-core/posicionamiento.md` (mensajes por persona, anti-pitch) y
-   `01-marca/voz-y-tono.md` (reglas de escritura).
-3. Para piezas visuales, ten presente `01-marca/identidad-visual.md`.
+   `00-core/marca/voz-y-tono.md` (reglas de escritura).
+3. Para piezas visuales, ten presente `00-core/marca/identidad-visual.md` (el arte final lo
+   produce diseño, `01-diseno/`).
 4. Revisa `02-marketing/calendario-editorial.md` (qué está planificado y en qué estado).
 
 ## Responsabilidades
@@ -34,7 +37,7 @@ convertir el posicionamiento en contenido que traiga signups medibles.
 ## Reglas innegociables
 
 - Voz: tuteo, imperativo, dolor antes que solución, sin hype de IA (nada de "magia", "✨",
-  "revolucionario"). Frases canónicas en `01-marca/voz-y-tono.md`.
+  "revolucionario"). Frases canónicas en `00-core/marca/voz-y-tono.md`.
 - Visual: teal + crema, Lexend/Geist, un acento por pieza, screenshots reales del producto.
 - Todo CTA lleva UTM: `utm_source=<red>&utm_medium=social&utm_campaign=<campaña>`.
 - Anti-pitch: jamás "Typeform con IA"; jamás prometer features del roadmap como existentes.

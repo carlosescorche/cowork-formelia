@@ -44,10 +44,10 @@ FAS?*
 | Área | Métricas que posee |
 | --- | --- |
 | [Marketing](../02-marketing/estrategia.md) | Alcance, CTR a landing, signups por fuente de contenido |
-| [Growth](../04-growth/estrategia.md) | Signups/mes por canal, activación, conversión free→pago, CTR del badge |
-| [Comunicación](../03-comunicacion/estrategia.md) | Open/click de email, respuestas de comunidad, menciones |
-| [Research](../05-research/estrategia.md) | Entrevistas/mes, hallazgos accionados, Sean Ellis |
-| [Operaciones](../06-operaciones/estrategia.md) | Margen bruto IA, burn, runway, compliance en verde |
+| [Growth](../03-growth/estrategia.md) | Signups/mes por canal, activación, conversión free→pago, CTR del badge, comunidades |
+| [Producto](../04-producto/estrategia.md) | Activación (registro → publicado), adopción de features, share de creación con IA |
+| [Arquitectura](../05-arquitectura/estrategia.md) | Costo de IA por operación, latencia, incidentes |
+| [Operaciones (core)](operaciones/estrategia.md) | Margen bruto IA, burn, runway, compliance en verde |
 
 ## Tablero mensual (llenar el día 1 de cada mes)
 

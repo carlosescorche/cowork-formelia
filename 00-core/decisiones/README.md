@@ -18,3 +18,5 @@ Registro inmutable de decisiones estratégicas. Una decisión por archivo, nombr
 | Fecha | Decisión | Estado |
 | --- | --- | --- |
 | 2026-07-30 | [Creación del entorno de gestión](2026-07-30-creacion-entorno-gestion.md) | Vigente |
+| 2026-08-04 | [Reestructuración de áreas y reinicio de marketing](2026-08-04-reestructuracion-areas.md) | Vigente |
+| 2026-08-04 | [Estrategia operativa H2-2026: avatares, canales, blog y recursos](2026-08-04-estrategia-h2-2026.md) | Vigente |
