@@ -34,6 +34,13 @@ el producto vive en `../formelia-app`.
 - Tipografía: **Lexend** (títulos, branding) + **Geist** (cuerpo, UI).
 - Las features de IA **no** usan violeta ni iconos "Sparkles" — grises neutros e iconos
   funcionales. El acento de acción siempre es teal.
+- **Prohibido usar iconos y emoji** en cualquier contenido que produzcamos: documentos del repo,
+  copy, posts, briefs, tablas, títulos, listas, mensajes de commit. Los estados y las etiquetas
+  se escriben con palabras ("pendiente", "idea", "publicado"), no con pictogramas. Única
+  excepción: que el founder lo pida explícitamente para una pieza concreta. No cuentan como
+  iconos las flechas (`→`), los caracteres de diagrama de árbol (`├ └ │ ─`) ni los operadores
+  (`≥ ≤ ≠`): son notación, no decoración. La regla aplica a texto; la iconografía funcional
+  dentro de la UI del producto sigue rigiéndose por `00-core/marca/identidad-visual.md`.
 - Tono: cercano, directo, **tuteo** (nunca voseo), imperativo, frases cortas, honesto.
   Nombra el dolor antes de la solución. **Informar, no vender:** los datos de pricing
   ("gratis", "sin tarjeta") solo donde tocan (pricing/onboarding), nunca como coletilla

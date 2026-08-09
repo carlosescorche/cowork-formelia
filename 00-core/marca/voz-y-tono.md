@@ -1,6 +1,6 @@
 # Voz y tono
 
-> Última actualización: 2026-08-06
+> Última actualización: 2026-08-08
 
 ## La voz de Formelia
 
@@ -28,6 +28,11 @@ hype-bro de IA. **Cercana, directa, honesta.**
    "lleva X al siguiente nivel"). Palabras que usaría Carolina.
 9. **El español no es una traducción.** Escribir primero en español, con giros naturales. Si
    suena a traducción del inglés, reescribir.
+10. **Sin iconos ni emoji (regla 2026-08-08).** Ningún pictograma en nada que produzcamos:
+    documentos internos, copy, posts, briefs, tablas, títulos, listas. Los estados y etiquetas
+    van con palabras ("pendiente", "en producción", "publicado"). El texto tiene que sostenerse
+    solo; un emoji casi siempre tapa una frase floja. Única excepción: que el founder lo pida
+    para una pieza concreta. No son iconos las flechas (`→`) ni los caracteres de diagrama.
 
 ## Frases canónicas (usar tal cual)
 
@@ -71,7 +76,7 @@ marca muestra el producto.
 
 - "Somos como Typeform pero…" (no nos definimos por otro).
 - "Revolucionario", "disruptivo", "impulsado por IA de última generación".
-- "✨ Magia ✨" o cualquier framing de la IA como truco.
+- "Magia" —con o sin emoji de destello— o cualquier framing de la IA como truco.
 - Anglicismos innecesarios cuando existe palabra natural: *lead* → "cliente potencial" en copy
   público (en docs internos, lo que sea más claro).
 - Promesas de features del roadmap como si existieran hoy.

@@ -13,7 +13,7 @@
   producto · 4 avatares con corte a 2 el 30-sep · foco México+Colombia · IG/TikTok/LinkedIn/X
   (personal + marca) · blog propio en formelia.io · Claude produce, founder aprueba todo.
 - **Riesgo #1:** distribución — 0 usuarios, 0 canal probado.
-- **⚠️ Bloqueantes del gate de julio SIN AUDITAR** (estado desconocido al 04-ago; el founder
+- **Bloqueantes del gate de julio SIN AUDITAR** (estado desconocido al 04-ago; el founder
   no lo tiene presente — detalle en [`operaciones/legal/`](operaciones/legal/README.md)):
   cierre legal (límite era 31-jul), economía de tokens, matriz `LimitDialog`, disclosure AI
   Act (vigente desde 02-ago). **Auditoría con evidencia: 05-ago.**
@@ -36,6 +36,14 @@
 
 ## Últimos movimientos
 
+- **2026-08-08** — **Regla de marca nueva: prohibido usar iconos y emoji** en todo lo que
+  produzcamos (documentos, copy, posts, briefs, tablas, títulos). Los estados y etiquetas van
+  con palabras. Única excepción: que el founder lo pida para una pieza concreta. Registrada
+  en [`CLAUDE.md`](../CLAUDE.md), en [voz-y-tono.md](marca/voz-y-tono.md) (regla 10) y en el
+  skill de marketing. Barrido completo del repo el mismo día: leyendas de estado del
+  calendario, flujo de aprobación de marketing, roadmap, checklist legal y PRDs quedaron en
+  palabras. La iconografía funcional de la UI del producto no cambia (la rige
+  [identidad-visual.md](marca/identidad-visual.md)).
 - **2026-08-08** — Tablero de aprobación creado en Notion
   ([Formelia — Calendario de contenido](https://app.notion.com/p/2edd98f1b797488497dda718cba2dc8b)):
   base con vista calendario + kanban del flujo idea→publicada. El primer lote de 13 ideas

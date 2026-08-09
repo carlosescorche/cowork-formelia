@@ -18,13 +18,13 @@ legal/
 
 | # | Ítem | Estado |
 | --- | --- | --- |
-| 1 | Nombre legal + domicilio del operador | ⬜ |
-| 2 | Ley aplicable y foro en términos | ⬜ |
-| 3 | Buzones `legal@` y `privacy@` | ⬜ |
-| 4 | DPA propia + DPA OpenAI + verificación Cerebras | ⬜ |
-| 5 | Redis nombrado en subencargados | ⬜ |
-| 6 | Agente DMCA registrado | ⬜ |
-| 7 | Disclosure AI Act (vigente 02-ago) | ⬜ |
+| 1 | Nombre legal + domicilio del operador | pendiente |
+| 2 | Ley aplicable y foro en términos | pendiente |
+| 3 | Buzones `legal@` y `privacy@` | pendiente |
+| 4 | DPA propia + DPA OpenAI + verificación Cerebras | pendiente |
+| 5 | Redis nombrado en subencargados | pendiente |
+| 6 | Agente DMCA registrado | pendiente |
+| 7 | Disclosure AI Act (vigente 02-ago) | pendiente |
 
 **Regla:** cada ítem se cierra con evidencia (link o documento) — no con "ya casi". Al cerrar
 los 7, actualizar [`00-core/memoria.md`](../../memoria.md).

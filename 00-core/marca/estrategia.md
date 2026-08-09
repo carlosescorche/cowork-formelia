@@ -1,6 +1,6 @@
 # Estrategia de marca y diseño
 
-> Documento vivo del equipo de Marca. Última actualización: 2026-07-30
+> Documento vivo del equipo de Marca. Última actualización: 2026-08-08
 > Fuentes: [`docs/design/color-system.md`](../../../formelia-app/docs/design/color-system.md),
 > [`docs/design/typography.md`](../../../formelia-app/docs/design/typography.md),
 > [`00-core/posicionamiento.md`](../posicionamiento.md)
@@ -28,7 +28,7 @@ Tres atributos, en orden:
    cliente brillando, la nuestra acompañando.
 2. **Teal como único acento de acción.** Éxito también es teal (no verde). El violeta solo existe
    como decorativo marginal, jamás asociado a IA.
-3. **La IA no se disfraza de magia.** Sin sparkles, sin degradados morados, sin "✨". La IA en
+3. **La IA no se disfraza de magia.** Sin sparkles, sin degradados morados, sin emoji de destello. La IA en
    Formelia es una herramienta seria que se muestra con resultados, no con fuegos artificiales.
 4. **Cálido sobre clínico.** Warm cream como superficie antes que blanco puro; fotografía e
    ilustración con luz cálida.
@@ -74,4 +74,7 @@ Tres atributos, en orden:
 
 ## Historial de cambios
 
+- 2026-08-08 — Regla de marca: **prohibido usar iconos y emoji** en el contenido que
+  producimos (detalle en [voz-y-tono.md](voz-y-tono.md), regla 10). Barrido del repo: todos
+  los pictogramas sustituidos por palabras.
 - 2026-07-30 — Versión inicial.

@@ -10,14 +10,14 @@
 
 | Fechas | Entregable | Métrica que mueve | Estado |
 | --- | --- | --- | --- |
-| 04–05 ago | **Auditoría de bloqueantes** del gate de julio (legal, economía de tokens, LimitDialog, disclosure AI Act) con evidencia por ítem | Riesgo de lanzamiento | 🔴 pendiente |
-| 05–08 ago | **Instrumentación de atribución** ([ADR-001](../05-arquitectura/specs/adr-001-stack-analitica.md)): PostHog EU + proxy first-party + UTMs escritos en Supabase al signup + 6 eventos base | Sin esto ningún experimento es interpretable | 🔴 pendiente |
-| 06–08 ago | **`llms.txt`** + verificación robots/sitemap | AI-search (canal #1) | 🔴 pendiente |
-| 08–14 ago | **12 plantillas públicas** (3 por avatar) como landings indexables con CTA "Usar esta plantilla" | Plantillas-SEO + onboarding instantáneo | 🔴 pendiente |
-| 11–14 ago | Smoke E2E del onboarding móvil (crear → publicar → responder) + landing del badge si falta | Activación | 🔴 pendiente |
-| **15 ago** | **LANZAMIENTO PÚBLICO** | — | 🔴 |
-| 16–31 ago | **`/blog` en formelia.io** (MDX) + 4 artículos fundacionales (1 por avatar) | SEO/AI-search | 🔴 pendiente |
-| 16–31 ago | Fricción de onboarding según feedback real de los primeros usuarios | Activación (registro → publicado) | 🔴 pendiente |
+| 04–05 ago | **Auditoría de bloqueantes** del gate de julio (legal, economía de tokens, LimitDialog, disclosure AI Act) con evidencia por ítem | Riesgo de lanzamiento | pendiente |
+| 05–08 ago | **Instrumentación de atribución** ([ADR-001](../05-arquitectura/specs/adr-001-stack-analitica.md)): PostHog EU + proxy first-party + UTMs escritos en Supabase al signup + 6 eventos base | Sin esto ningún experimento es interpretable | pendiente |
+| 06–08 ago | **`llms.txt`** + verificación robots/sitemap | AI-search (canal #1) | pendiente |
+| 08–14 ago | **12 plantillas públicas** (3 por avatar) como landings indexables con CTA "Usar esta plantilla" | Plantillas-SEO + onboarding instantáneo | pendiente |
+| 11–14 ago | Smoke E2E del onboarding móvil (crear → publicar → responder) + landing del badge si falta | Activación | pendiente |
+| **15 ago** | **LANZAMIENTO PÚBLICO** | — | pendiente |
+| 16–31 ago | **`/blog` en formelia.io** (MDX) + 4 artículos fundacionales (1 por avatar) | SEO/AI-search | pendiente |
+| 16–31 ago | Fricción de onboarding según feedback real de los primeros usuarios | Activación (registro → publicado) | pendiente |
 
 ## Septiembre — activación y conversión
 

@@ -1,6 +1,6 @@
 # Estrategia de marketing
 
-> Documento vivo del equipo de Marketing. Última actualización: 2026-08-04 (v2)
+> Documento vivo del equipo de Marketing. Última actualización: 2026-08-08 (v2)
 > Definida en sesión de estrategia con el founder — decisión:
 > [estrategia H2-2026](../00-core/decisiones/2026-08-04-estrategia-h2-2026.md).
 > Se subordina a [`00-core/posicionamiento.md`](../00-core/posicionamiento.md); los canales y
@@ -120,8 +120,8 @@ que el founder aprobó.**
 base de Notion (vista calendario + kanban). Dos compuertas de aprobación por pieza:
 
 ```
-💡 idea → ✍️ guion/copy → 👀 revisión 1 (apruebas el guion) → 🎨 producción
-       → 🖼️ revisión 2 (apruebas el arte final) → ✅ aprobada → 🗓️ programada → 📊 publicada
+idea → guion/copy → revisión 1 (apruebas el guion) → producción
+     → revisión 2 (apruebas el arte final) → aprobada → programada → publicada
 ```
 
 Claude crea las piezas vía MCP con el copy o guion dentro; el founder revisa desde el móvil,
@@ -161,6 +161,8 @@ consolidación (hasta 30-sep, semanas temáticas por avatar). Brief en [campanas
 
 ## Historial de cambios
 
+- 2026-08-08 — Aplicada la regla de marca de **cero iconos y emoji**: el flujo de aprobación
+  y los estados del calendario pasan a nombrarse con palabras.
 - 2026-08-04 — **v2.** Reescrita tras el reinicio: 4 avatares con corte, 6 superficies en 4
   canales, blog propio en formelia.io, sistema de producción founder+Claude, herramientas.
 - 2026-08-04 — Reinicio total (v1 descartada).

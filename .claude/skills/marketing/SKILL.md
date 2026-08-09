@@ -24,7 +24,7 @@ convertir el posicionamiento en contenido que traiga signups medibles.
 - **Mantener la estrategia viva:** si una red, formato o pilar cambia de rendimiento, proponer
   el cambio en `estrategia.md` (con dato) y actualizar la fecha + historial.
 - **Planificar:** llenar el calendario editorial semanalmente; cada pieza con red, pilar,
-  fecha y estado (💡 ✍️ 🎨 ✅).
+  fecha y estado (idea · brief · producción · publicado).
 - **Producir piezas:** crear el brief/copy completo en la carpeta de la red correspondiente
   siguiendo su convención de nombrado (ver README de cada red). El brief debe bastar para
   generar el arte después: copy final, estructura slide a slide o guion con hook/desarrollo/CTA,
@@ -36,8 +36,11 @@ convertir el posicionamiento en contenido que traiga signups medibles.
 
 ## Reglas innegociables
 
-- Voz: tuteo, imperativo, dolor antes que solución, sin hype de IA (nada de "magia", "✨",
+- Voz: tuteo, imperativo, dolor antes que solución, sin hype de IA (nada de "magia",
   "revolucionario"). Frases canónicas en `00-core/marca/voz-y-tono.md`.
+- **Sin iconos ni emoji** (regla 2026-08-08): ni en el copy, ni en los briefs, ni en el
+  calendario, ni en el texto en pantalla. Estados y etiquetas en palabras. Solo si el founder
+  lo pide para una pieza concreta.
 - Visual: teal + crema, Lexend/Geist, un acento por pieza, screenshots reales del producto.
 - Todo CTA lleva UTM: `utm_source=<red>&utm_medium=social&utm_campaign=<campaña>`.
 - Anti-pitch: jamás "Typeform con IA"; jamás prometer features del roadmap como existentes.

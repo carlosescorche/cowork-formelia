@@ -9,18 +9,18 @@
 > queda como registro estratégico por semana. El tablero está vacío: el primer lote de ideas
 > de la semana del 11–16 fue descartado por el founder el 2026-08-08; la semana se replanifica.
 
-**Estados:** 💡 idea · ✍️ brief en curso · 🎨 en producción · ✅ publicado
+**Estados:** idea · brief en curso · en producción · publicado
 
 ## Semana 4–10 ago (teaser, parte 1)
 
 | Fecha | Superficie | Pilar | Pieza | Estado | Resultado (7d) |
 | --- | --- | --- | --- | --- | --- |
-| Mié 06 | LinkedIn personal | Build in public | "Por qué construyo Formelia" — historia fundacional en primera persona | 💡 | |
-| Mié 06 | X personal | Build in public | Recorte del post de LinkedIn en hilo corto | 💡 | |
-| Jue 07 | — (grabación) | — | Batch A: presentación del founder a cámara + demo 90s del prompt al formulario | 💡 | |
-| Vie 08 | IG + TikTok @joinformelia | Producto | Reel 1: "Del prompt al formulario publicado en 90 segundos" (primer post de la marca) | 💡 | |
-| Vie 08 | IG personal | Build in public | Stories BTS: "faltan 7 días" | 💡 | |
-| Sáb 09 | LinkedIn personal | Educación (Valeria) | "El brief que tus clientes sí completan" + clip | 💡 | |
+| Mié 06 | LinkedIn personal | Build in public | "Por qué construyo Formelia" — historia fundacional en primera persona | idea | |
+| Mié 06 | X personal | Build in public | Recorte del post de LinkedIn en hilo corto | idea | |
+| Jue 07 | — (grabación) | — | Batch A: presentación del founder a cámara + demo 90s del prompt al formulario | idea | |
+| Vie 08 | IG + TikTok @joinformelia | Producto | Reel 1: "Del prompt al formulario publicado en 90 segundos" (primer post de la marca) | idea | |
+| Vie 08 | IG personal | Build in public | Stories BTS: "faltan 7 días" | idea | |
+| Sáb 09 | LinkedIn personal | Educación (Valeria) | "El brief que tus clientes sí completan" + clip | idea | |
 
 ## Semana 11–15 ago (teaser, parte 2 + LANZAMIENTO)
 
@@ -30,11 +30,11 @@
 
 | Fecha | Superficie | Pilar | Pieza | Estado | Resultado (7d) |
 | --- | --- | --- | --- | --- | --- |
-| Lun 11 | IG + TikTok @joinformelia | Educación (Carolina) | Reel: "La ficha de inscripción que los padres sí terminan" (vuelta a clases) | 💡 | |
-| Mar 12 | LinkedIn personal + X | Build in public | "Lo que aprendí llegando al lanzamiento" + números honestos | 💡 | |
-| Mié 13 | IG @joinformelia | Educación (Camila) | Carrusel: "Tu ficha de ingreso, lista antes de la primera consulta" | 💡 | |
-| Jue 14 | Todas | Producto | Countdown 24h + stories | 💡 | |
-| **Vie 15** | **Todas + comunidades** | **Lanzamiento** | Pieza de lanzamiento: founder a cámara + demo del producto real | 💡 | |
+| Lun 11 | IG + TikTok @joinformelia | Educación (Carolina) | Reel: "La ficha de inscripción que los padres sí terminan" (vuelta a clases) | idea | |
+| Mar 12 | LinkedIn personal + X | Build in public | "Lo que aprendí llegando al lanzamiento" + números honestos | idea | |
+| Mié 13 | IG @joinformelia | Educación (Camila) | Carrusel: "Tu ficha de ingreso, lista antes de la primera consulta" | idea | |
+| Jue 14 | Todas | Producto | Countdown 24h + stories | idea | |
+| **Vie 15** | **Todas + comunidades** | **Lanzamiento** | Pieza de lanzamiento: founder a cámara + demo del producto real | idea | |
 
 ## Backlog de ideas
 
