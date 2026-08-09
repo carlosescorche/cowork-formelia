@@ -14,16 +14,19 @@ reutilización agresiva entre redes, y Claude produce todos los borradores.
 
 ## Objetivo del área
 
-Que los 4 [avatares](avatares.md) descubran Formelia, entiendan en 5 segundos qué resuelve y
-lleguen a crear su primer formulario. Métricas que posee marketing: alcance cualificado, CTR
-a landing, signups por fuente de contenido (UTM por pieza). Cada pieza empuja una de dos
+Que cualquier negocio que le pida información a alguien descubra Formelia, entienda en 5
+segundos qué resuelve y llegue a crear su primer formulario. **Amplio primero, acotar con
+datos** (decisión 2026-08-08): los cuatro [escenarios](avatares.md) ponen el ejemplo concreto,
+no el límite de la audiencia. Métricas que posee marketing: alcance cualificado, CTR a
+landing, signups por fuente de contenido (UTM por pieza). Cada pieza empuja una de dos
 acciones: **crear un formulario o compartir uno.**
 
 ## Pilares de contenido (proporción 50/30/20)
 
-1. **Educación operativa (50%)** — resolver el job-to-be-done del avatar de la semana, no
-   hablar del producto. "La ficha de inscripción que los padres sí terminan", "El brief que
-   tus clientes sí completan". El producto aparece como demostración.
+1. **Educación operativa (50%)** — resolver un dolor que reconoce cualquier negocio, no hablar
+   del producto. El dolor se nombra en general y un escenario concreto lo ilustra: "Sabes
+   cuántos lo empezaron, no cuántos lo terminaron", "Los datos que tus clientes sí te mandan
+   completos". El producto aparece como demostración.
 2. **Producto en acción (30%)** — demos ≤60s: del prompt al formulario publicado, compartir
    por WhatsApp con QR, la IA resumiendo 200 respuestas. Siempre producto real.
 3. **Build in public (20%)** — la historia del founder en primera persona: métricas reales,
@@ -143,8 +146,11 @@ propia convención.
 
 - UTM en todo: `utm_source=<red>&utm_medium=social&utm_campaign=avatar-<slug>` (o campaña).
 - Revisión semanal (viernes, con Claude): resultados a 7 días por pieza en el calendario.
-- Revisión mensual (día 1): por red, pilar y avatar → matar o doblar formatos.
-- **Corte de avatares 30-sep** según [avatares.md](avatares.md).
+- Revisión mensual (día 1): por red, pilar y escenario → matar o doblar formatos, y subir el
+  peso del escenario con más señal.
+- **Primer acotamiento formal de escenarios: 30-sep** según [avatares.md](avatares.md). Ya no
+  es un corte automático de 4 a 2: se acota con datos. La señal por sector viene de plantillas,
+  artículos y contacto directo, no de las piezas sociales (que son amplias a propósito).
 
 ## Lenguaje y diseño (manda [`00-core/marca/`](../00-core/marca/))
 
@@ -161,6 +167,10 @@ consolidación (hasta 30-sep, semanas temáticas por avatar). Brief en [campanas
 
 ## Historial de cambios
 
+- 2026-08-08 — **Amplio primero, acotar con datos**
+  ([decisión](../00-core/decisiones/2026-08-08-avatares-amplio-primero.md)): los avatares
+  pasan a ser escenarios de ejemplo, no filtros de audiencia. Cambian el objetivo del área, el
+  pilar de educación operativa y la medición; el corte del 30-sep deja de ser automático.
 - 2026-08-08 — Aplicada la regla de marca de **cero iconos y emoji**: el flujo de aprobación
   y los estados del calendario pasan a nombrarse con palabras.
 - 2026-08-04 — **v2.** Reescrita tras el reinicio: 4 avatares con corte, 6 superficies en 4

@@ -33,10 +33,13 @@ Segmentos priorizados por willingness-to-pay:
 **Anti-targets:** indie hackers anglófonos, research enterprise, gobierno/licitaciones,
 verticales con compliance duro (HIPAA real, KYC) antes de 2028.
 
-**Operativización (2026-08-04):** los segmentos se prueban como 4 avatares con contenido y
-plantillas dedicadas — consultora, salud-lite, educación, eventos — con corte a 2 el
-30-sep-2026 por datos. País foco inicial: México + Colombia. Ver
-[`02-marketing/avatares.md`](../02-marketing/avatares.md).
+**Operativización (2026-08-08):** el contenido arranca **lo más amplio posible** y se acota con
+datos de audiencia. Los cuatro escenarios — consultora, salud-lite, negocio de servicios,
+eventos — no son el filtro de a quién le hablamos: son la fuente del ejemplo concreto. La
+segmentación real vive en plantillas, artículos y contacto directo, cada uno con su UTM.
+Primer acotamiento formal: 30-sep-2026. País foco inicial: México + Colombia. Ver
+[`02-marketing/avatares.md`](../02-marketing/avatares.md) y la
+[decisión](decisiones/2026-08-08-avatares-amplio-primero.md).
 
 ## Mensajes por persona
 
@@ -93,6 +96,9 @@ progreso guardado, cero fricción. Es la razón de la promesa "la gente sí term
 
 ## Historial de cambios
 
+- 2026-08-08 — La operativización del beachhead pasa a **amplio primero**: los avatares dejan
+  de filtrar la audiencia y pasan a ser la fuente del ejemplo
+  ([decisión](decisiones/2026-08-08-avatares-amplio-primero.md)).
 - 2026-08-06 — Headline canónico funcional; la promesa pasa a línea de apoyo
   ([decisión](decisiones/2026-08-06-headline-funcional.md)).
 - 2026-08-04 — Añadida la operativización del beachhead en 4 avatares con corte 30-sep.
