@@ -36,6 +36,30 @@
 
 ## Últimos movimientos
 
+- **2026-08-09** — Propuestas de la semana 1 escritas (tema: qué es Formelia) y **el contenido
+  de cuentas personales sale de este repo**: pasa a
+  `../cowork-personal/01-contenido/2026-08-plan-agosto/` con su propia tormenta de ideas. Este
+  repo queda solo con las cuentas de marca. La frontera del
+  [README personal](../../cowork-personal/README.md) se cumple ahora también en el contenido,
+  no solo en la identidad.
+- **2026-08-08** — **Avatares: amplio primero, acotar con datos**
+  ([decisión](decisiones/2026-08-08-avatares-amplio-primero.md)). Con audiencia cero, acotar
+  antes de tener señal es adivinar: el contenido arranca lo más amplio posible y los cuatro
+  escenarios pasan de ser el filtro de audiencia a ser la fuente del ejemplo concreto. Carolina
+  se desliga de educación privada y de la vuelta a clases, y vuelve a ser la coordinadora u
+  operativa de un negocio de servicios. El corte del 30-sep deja de ser automático de 4 a 2 y
+  pasa a ser el primer acotamiento con datos. La segmentación por sector se mueve a plantillas,
+  artículos y contacto directo (donde la persona ya declaró a qué se dedica). Reescrito
+  [`avatares.md`](../02-marketing/avatares.md); actualizados
+  [`posicionamiento.md`](posicionamiento.md) y la
+  [estrategia de marketing](../02-marketing/estrategia.md).
+- **2026-08-08** — Plan de contenido de agosto en tormenta de ideas
+  ([brainstorm](../02-marketing/campanas/2026-08-biblioteca-fundacional/brainstorm.md), 68
+  ideas, pendiente de aprobación). Marco fijado por el founder: **no se menciona la fecha de
+  lanzamiento**, se habla del producto como algo que ya está en producción, todo atemporal y
+  en lenguaje simple (sin jerga ni palabras en inglés). Pendiente al aprobar: reescribir la
+  sección "Campaña activa" de la estrategia de marketing, que aún describe la campaña de
+  lanzamiento con cuenta regresiva.
 - **2026-08-08** — **Regla de marca nueva: prohibido usar iconos y emoji** en todo lo que
   produzcamos (documentos, copy, posts, briefs, tablas, títulos). Los estados y etiquetas van
   con palabras. Única excepción: que el founder lo pida para una pieza concreta. Registrada
