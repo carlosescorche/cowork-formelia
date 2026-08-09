@@ -2,6 +2,12 @@
 
 > Reiniciado el 2026-08-04 y sembrado con las 2 semanas de lanzamiento. Estrategia:
 > [estrategia.md](estrategia.md) · Avatares: [avatares.md](avatares.md)
+>
+> **Operación diaria → Notion** (desde 2026-08-08):
+> [Formelia — Calendario de contenido](https://app.notion.com/p/2edd98f1b797488497dda718cba2dc8b)
+> (vista calendario + kanban de aprobación, una tarjeta por pieza con su brief). Este archivo
+> queda como registro estratégico por semana. El tablero está vacío: el primer lote de ideas
+> de la semana del 11–16 fue descartado por el founder el 2026-08-08; la semana se replanifica.
 
 **Estados:** 💡 idea · ✍️ brief en curso · 🎨 en producción · ✅ publicado
 
@@ -17,6 +23,10 @@
 | Sáb 09 | LinkedIn personal | Educación (Valeria) | "El brief que tus clientes sí completan" + clip | 💡 | |
 
 ## Semana 11–15 ago (teaser, parte 2 + LANZAMIENTO)
+
+> **Aviso 2026-08-08:** el primer lote de ideas propuesto para esta semana (expansión de
+> esta tabla a 13 piezas) fue descartado por el founder. La tabla sembrada el 04-ago se
+> conserva como referencia; la semana está pendiente de replanificar antes del lun 11.
 
 | Fecha | Superficie | Pilar | Pieza | Estado | Resultado (7d) |
 | --- | --- | --- | --- | --- | --- |

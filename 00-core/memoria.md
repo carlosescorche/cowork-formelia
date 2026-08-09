@@ -36,6 +36,13 @@
 
 ## Últimos movimientos
 
+- **2026-08-08** — Tablero de aprobación creado en Notion
+  ([Formelia — Calendario de contenido](https://app.notion.com/p/2edd98f1b797488497dda718cba2dc8b)):
+  base con vista calendario + kanban del flujo idea→publicada. El primer lote de 13 ideas
+  para la semana de lanzamiento fue **descartado completo por el founder** (movido a "Ideas
+  descartadas" en Notion); el tablero quedó en blanco. **Pendiente urgente: replanificar la
+  semana del 11–15 con el founder antes del lun 11** — entender qué falló del primer lote
+  antes de proponer el segundo.
 - **2026-08-06** — Nuevo headline canónico: **"Describe tu formulario y la IA lo crea"** (el
   mensaje funcional abre en frío; "Formularios que la gente sí termina" pasa a línea de apoyo
   — [decisión](decisiones/2026-08-06-headline-funcional.md)). Pendiente: adaptar el copy de
