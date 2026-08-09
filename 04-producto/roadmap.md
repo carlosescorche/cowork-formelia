@@ -16,7 +16,7 @@
 | 08–14 ago | **12 plantillas públicas** (3 por avatar) como landings indexables con CTA "Usar esta plantilla" | Plantillas-SEO + onboarding instantáneo | 🔴 pendiente |
 | 11–14 ago | Smoke E2E del onboarding móvil (crear → publicar → responder) + landing del badge si falta | Activación | 🔴 pendiente |
 | **15 ago** | **LANZAMIENTO PÚBLICO** | — | 🔴 |
-| 16–31 ago | **`/blog` en formelia.com** (MDX) + 4 artículos fundacionales (1 por avatar) | SEO/AI-search | 🔴 pendiente |
+| 16–31 ago | **`/blog` en formelia.io** (MDX) + 4 artículos fundacionales (1 por avatar) | SEO/AI-search | 🔴 pendiente |
 | 16–31 ago | Fricción de onboarding según feedback real de los primeros usuarios | Activación (registro → publicado) | 🔴 pendiente |
 
 ## Septiembre — activación y conversión

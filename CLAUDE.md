@@ -34,9 +34,14 @@ el producto vive en `../formelia-app`.
 - Tipografía: **Lexend** (títulos, branding) + **Geist** (cuerpo, UI).
 - Las features de IA **no** usan violeta ni iconos "Sparkles" — grises neutros e iconos
   funcionales. El acento de acción siempre es teal.
-- Tono: cercano, directo, **tuteo** (nunca voseo), imperativo, frases cortas, honesto
-  ("Sin tarjeta", "Gratis para siempre"). Nombra el dolor antes de la solución.
-- Headline canónico: **"Formularios que la gente sí termina."**
+- Tono: cercano, directo, **tuteo** (nunca voseo), imperativo, frases cortas, honesto.
+  Nombra el dolor antes de la solución. **Informar, no vender:** los datos de pricing
+  ("gratis", "sin tarjeta") solo donde tocan (pricing/onboarding), nunca como coletilla
+  comercial en bios/posts/headlines — nada estilo teletienda. Nunca "en español" en textos
+  ya escritos en español (redundante).
+- Headline canónico: **"Describe tu formulario y la IA lo crea."** Línea de apoyo:
+  "Formularios que la gente sí termina" (subtítulo en landing, segunda línea de bio, cierre
+  de posts) — la promesa ya no abre en frío.
 
 ## Datos fijos del negocio (para no re-buscar)
 
@@ -48,5 +53,8 @@ el producto vive en `../formelia-app`.
   (secundaria), el respondedor móvil/WhatsApp-first (terciaria).
 - Métrica norte: **FAS** — Formularios Activos por Semana (publicados con ≥5 respuestas/semana).
 - Lanzamiento público objetivo: **15-ago-2026**. Riesgo #1 declarado: **distribución**.
+- Dominio: **formelia.io** (no .com). Buzones legales: `legal@formelia.io`, `privacy@formelia.io`.
+- Handles: marca **@joinformelia** (IG, TikTok, LinkedIn — @formelia estaba ocupado) ·
+  founder **@caescorche** (LinkedIn, X, IG personales). En X no hay cuenta de marca.
 - Anti-pitch: nunca decir "Typeform con IA", "vamos por todo el mercado global", ni vender TAMs
   sin camino. Anti-posicionamiento: no somos research, no somos chatbot, no somos no-code amplio.

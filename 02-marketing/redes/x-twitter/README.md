@@ -1,4 +1,4 @@
-# X (Twitter) — @formelia
+# X (Twitter) — @caescorche (cuenta personal del founder; no hay cuenta de marca en X)
 
 > Reiniciado el 2026-08-04. El rol estratégico, cadencia y formatos de este canal se definirán
 > en la nueva [estrategia de marketing](../../estrategia.md).

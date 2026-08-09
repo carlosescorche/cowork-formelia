@@ -12,7 +12,7 @@
 | Mié 06 | LinkedIn personal | Build in public | "Por qué construyo Formelia" — historia fundacional en primera persona | 💡 | |
 | Mié 06 | X personal | Build in public | Recorte del post de LinkedIn en hilo corto | 💡 | |
 | Jue 07 | — (grabación) | — | Batch A: presentación del founder a cámara + demo 90s del prompt al formulario | 💡 | |
-| Vie 08 | IG + TikTok @formelia | Producto | Reel 1: "Del prompt al formulario publicado en 90 segundos" (primer post de la marca) | 💡 | |
+| Vie 08 | IG + TikTok @joinformelia | Producto | Reel 1: "Del prompt al formulario publicado en 90 segundos" (primer post de la marca) | 💡 | |
 | Vie 08 | IG personal | Build in public | Stories BTS: "faltan 7 días" | 💡 | |
 | Sáb 09 | LinkedIn personal | Educación (Valeria) | "El brief que tus clientes sí completan" + clip | 💡 | |
 
@@ -20,11 +20,11 @@
 
 | Fecha | Superficie | Pilar | Pieza | Estado | Resultado (7d) |
 | --- | --- | --- | --- | --- | --- |
-| Lun 11 | IG + TikTok @formelia | Educación (Carolina) | Reel: "La ficha de inscripción que los padres sí terminan" (vuelta a clases) | 💡 | |
+| Lun 11 | IG + TikTok @joinformelia | Educación (Carolina) | Reel: "La ficha de inscripción que los padres sí terminan" (vuelta a clases) | 💡 | |
 | Mar 12 | LinkedIn personal + X | Build in public | "Lo que aprendí llegando al lanzamiento" + números honestos | 💡 | |
-| Mié 13 | IG @formelia | Educación (Camila) | Carrusel: "Tu ficha de ingreso, lista antes de la primera consulta" | 💡 | |
+| Mié 13 | IG @joinformelia | Educación (Camila) | Carrusel: "Tu ficha de ingreso, lista antes de la primera consulta" | 💡 | |
 | Jue 14 | Todas | Producto | Countdown 24h + stories | 💡 | |
-| **Vie 15** | **Todas + comunidades** | **Lanzamiento** | Pieza de lanzamiento: founder a cámara + demo + "Gratis para siempre · Sin tarjeta" | 💡 | |
+| **Vie 15** | **Todas + comunidades** | **Lanzamiento** | Pieza de lanzamiento: founder a cámara + demo del producto real | 💡 | |
 
 ## Backlog de ideas
 

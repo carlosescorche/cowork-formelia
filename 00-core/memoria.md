@@ -11,7 +11,7 @@
 - **Estrategia H2 definida** (decisión
   [2026-08-04](decisiones/2026-08-04-estrategia-h2-2026.md)): 70% distribución / 30%
   producto · 4 avatares con corte a 2 el 30-sep · foco México+Colombia · IG/TikTok/LinkedIn/X
-  (personal + marca) · blog propio en formelia.com · Claude produce, founder aprueba todo.
+  (personal + marca) · blog propio en formelia.io · Claude produce, founder aprueba todo.
 - **Riesgo #1:** distribución — 0 usuarios, 0 canal probado.
 - **⚠️ Bloqueantes del gate de julio SIN AUDITAR** (estado desconocido al 04-ago; el founder
   no lo tiene presente — detalle en [`operaciones/legal/`](operaciones/legal/README.md)):
@@ -36,6 +36,11 @@
 
 ## Últimos movimientos
 
+- **2026-08-06** — Nuevo headline canónico: **"Describe tu formulario y la IA lo crea"** (el
+  mensaje funcional abre en frío; "Formularios que la gente sí termina" pasa a línea de apoyo
+  — [decisión](decisiones/2026-08-06-headline-funcional.md)). Pendiente: adaptar el copy de
+  la landing en `formelia-app` y revisar las piezas sembradas del calendario con el gancho
+  nuevo.
 - **2026-08-04** — Se crea `../cowork-personal/` (repo separado): la marca personal del
   founder (build in public, narrativa, red) se gestiona allí; este repo define solo qué
   aportan las cuentas personales a la distribución de Formelia. Stack de arte redefinido:

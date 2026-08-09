@@ -33,10 +33,10 @@ acciones: **crear un formulario o compartir uno.**
 
 | Superficie | Rol | Cadencia | Formato |
 | --- | --- | --- | --- |
-| **IG @formelia** | Canal principal de avatares (Camila, Carolina) | 3 reels + 1 carrusel/sem + 3 stories | Reels ≤45s, carrusel educativo |
-| **TikTok @formelia** | Alcance frío; mismos videos que IG | 3 videos/sem (reutilizados) | Video vertical |
+| **IG @joinformelia** | Canal principal de avatares (Camila, Carolina) | 3 reels + 1 carrusel/sem + 3 stories | Reels ≤45s, carrusel educativo |
+| **TikTok @joinformelia** | Alcance frío; mismos videos que IG | 3 videos/sem (reutilizados) | Video vertical |
 | **LinkedIn personal** | Build in public + avatar Valeria | 3 posts/sem | Texto + clip o carrusel-documento |
-| **LinkedIn @formelia** | Presencia de marca; reutiliza | 2 posts/sem (repurpose) | Carrusel + clip |
+| **LinkedIn @joinformelia** | Presencia de marca; reutiliza | 2 posts/sem (repurpose) | Carrusel + clip |
 | **X personal** | Build in public + avatar Diego | 4 tuits/sem | Recortes de LinkedIn, números, capturas |
 | **IG personal** | BTS y cercanía; amplifica la marca | 3 stories/sem + repost | Stories crudas |
 
@@ -60,7 +60,7 @@ compartido, etiquetadas `cuenta: personal`.
 | Jue | Grabar batch B (45m) + outreach LinkedIn (30m) | Artículo 2 + mensajes de outreach personalizados |
 | Vie | Aprobar blog + revisión semanal de métricas (45m) | Informe semanal: qué funcionó, qué ajustar |
 
-## Blog — en formelia.com (decidido, no Substack)
+## Blog — en formelia.io (decidido, no Substack)
 
 - **Dónde:** `/blog` dentro de la app Next.js (MDX). El SEO y la citabilidad AI-search se
   acumulan en dominio propio — la asimetría del negocio. (Construcción: 16–31 ago, ver
@@ -162,6 +162,6 @@ consolidación (hasta 30-sep, semanas temáticas por avatar). Brief en [campanas
 ## Historial de cambios
 
 - 2026-08-04 — **v2.** Reescrita tras el reinicio: 4 avatares con corte, 6 superficies en 4
-  canales, blog propio en formelia.com, sistema de producción founder+Claude, herramientas.
+  canales, blog propio en formelia.io, sistema de producción founder+Claude, herramientas.
 - 2026-08-04 — Reinicio total (v1 descartada).
 - 2026-07-30 — Versión inicial (descartada).

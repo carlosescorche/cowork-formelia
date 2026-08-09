@@ -60,7 +60,8 @@ Tres atributos, en orden:
 - [ ] Voz: tuteo, imperativo, frases cortas, sin jerga; ver [voz-y-tono.md](voz-y-tono.md).
 - [ ] No infringe el anti-pitch (nada de "Typeform con IA", nada de promesas de agentes).
 - [ ] Legible en móvil; contraste AA mínimo.
-- [ ] CTA claro y honesto ("Crear formulario gratis" / "Sin tarjeta").
+- [ ] CTA claro y honesto ("Crear formulario gratis") — sin coletillas comerciales
+  (regla 5 de voz: informar, no vender).
 
 ## Deudas y pendientes de marca
 

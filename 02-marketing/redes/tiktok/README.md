@@ -1,4 +1,4 @@
-# TikTok — @formelia
+# TikTok — @joinformelia
 
 > Reiniciado el 2026-08-04. El rol estratégico, cadencia y formatos de este canal se definirán
 > en la nueva [estrategia de marketing](../../estrategia.md).

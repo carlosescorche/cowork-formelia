@@ -17,7 +17,7 @@ con fecha límite **31-jul-2026**:
 
 1. [ ] Identificar al operador: nombre legal + domicilio (decisión de entidad/jurisdicción).
 2. [ ] Fijar ley aplicable y foro en los términos.
-3. [ ] Crear buzones `legal@formelia.com` y `privacy@formelia.com`.
+3. [ ] Crear buzones `legal@formelia.io` y `privacy@formelia.io`.
 4. [ ] Plantilla de DPA propia; aceptar DPA de OpenAI; verificar no-entrenamiento de Cerebras.
 5. [ ] Nombrar el proveedor de Redis en la lista de subencargados.
 6. [ ] Registrar agente DMCA.

@@ -1,6 +1,6 @@
 # Voz y tono
 
-> Última actualización: 2026-08-04
+> Última actualización: 2026-08-06
 
 ## La voz de Formelia
 
@@ -15,25 +15,34 @@ hype-bro de IA. **Cercana, directa, honesta.**
 2. **Frases cortas.** Una idea por frase. Si necesita coma y medio, son dos frases.
 3. **El dolor primero, la solución después.** "Las respuestas mueren en un Sheets que nadie
    mira" → "Formelia te dice qué está pasando."
-4. **Promesas concretas y honestas.** "Sin tarjeta", "Gratis para siempre", "sin letra pequeña".
-   Nunca prometer lo que el producto no hace hoy.
-5. **"Nosotros" de equipo humano.** "Corre por nuestra cuenta", "te leemos y respondemos".
-6. **Sin jerga.** Ni técnica ("schema", "SSR") ni de marketing ("revoluciona", "potencia",
+4. **Promesas concretas y honestas.** Nunca prometer lo que el producto no hace hoy.
+5. **Informar, no vender (regla 2026-08-04).** Los datos honestos del pricing ("gratis",
+   "sin tarjeta") se dicen como información donde tocan — página de precios, onboarding,
+   FAQ — **nunca como coletilla comercial en bios, posts o headlines.** Nada que suene a
+   teletienda o a venta forzada. Profesional y cercano; el producto convence, no el eslogan.
+6. **Nunca "en español" en textos escritos en español (regla 2026-08-04).** Es redundante:
+   la hispanidad se demuestra, no se declara. Solo se nombra el idioma cuando ES el tema
+   (comparativas, artículos sobre el mercado).
+7. **"Nosotros" de equipo humano.** "Corre por nuestra cuenta", "te leemos y respondemos".
+8. **Sin jerga.** Ni técnica ("schema", "SSR") ni de marketing ("revoluciona", "potencia",
    "lleva X al siguiente nivel"). Palabras que usaría Carolina.
-7. **El español no es una traducción.** Escribir primero en español, con giros naturales. Si
+9. **El español no es una traducción.** Escribir primero en español, con giros naturales. Si
    suena a traducción del inglés, reescribir.
 
 ## Frases canónicas (usar tal cual)
 
-- **"Formularios que la gente sí termina."** (headline, tagline)
+- **"Describe tu formulario y la IA lo crea."** (headline canónico — decisión 2026-08-06)
+- **"Formularios que la gente sí termina."** (línea de apoyo: subtítulo en landing, segunda
+  línea de bio, cierre de posts — ya no abre en frío)
 - "Descríbelo con tus palabras y deja que la IA arme el primer borrador."
 - "El formulario se ve tuyo, no de la herramienta con la que lo hiciste."
 - "Analítica que sí se entiende."
 - "Ninguna respuesta se pierde."
 - "De cien respuestas a una decisión."
 - "Empieza gratis, crece cuando lo necesites."
-- "Gratis para siempre · Sin tarjeta de crédito."
 - "Tu próximo formulario puede estar listo hoy."
+- "Gratis para siempre · Sin tarjeta de crédito." *(solo pricing/onboarding — prohibida en
+  bios, posts y headlines por la regla 5)*
 
 ## Tono por contexto
 
@@ -52,7 +61,7 @@ hype-bro de IA. **Cercana, directa, honesta.**
 | Cuenta | Voz | Qué publica |
 | --- | --- | --- |
 | LinkedIn / X / IG **personales** (founder) | **Primera persona.** Contado, no vendido. Números reales, decisiones, errores. Sin CTA duro en cada pieza — la confianza es el producto. | Build in public, educación para consultores (Valeria/Diego), BTS |
-| IG / TikTok / LinkedIn **@formelia** | **Colega que enseña.** Imperativo, útil, dolor → solución, CTA "Crear formulario gratis". Nunca habla en "yo". | Educación por avatar (Camila/Carolina), demos, plantillas |
+| IG / TikTok / LinkedIn **@joinformelia** | **Colega que enseña.** Imperativo, útil, dolor → solución, CTA "Crear formulario gratis". Nunca habla en "yo". | Educación por avatar (Camila/Carolina), demos, plantillas |
 
 Regla de frontera: la marca nunca cuenta la vida del founder; el founder nunca suena a
 anuncio. Cuando una pieza cruza (p. ej. el lanzamiento), el founder cuenta la historia y la

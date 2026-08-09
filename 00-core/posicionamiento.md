@@ -1,6 +1,6 @@
 # Posicionamiento y mensajes
 
-> Última actualización: 2026-07-30 · Fuentes:
+> Última actualización: 2026-08-06 · Fuentes:
 > [`docs/vision/05-nicho-y-pmf.md`](../../formelia-app/docs/vision/05-nicho-y-pmf.md),
 > [`docs/vision/06-diferenciacion-y-pivotes.md`](../../formelia-app/docs/vision/06-diferenciacion-y-pivotes.md)
 
@@ -9,7 +9,10 @@
 **Formelia es el creador de formularios AI-first del mundo hispanohablante: descríbelo con tus
 palabras, publícalo con tu marca y entiende cada respuesta sin exportar nada.**
 
-Headline público canónico: **"Formularios que la gente sí termina."**
+Headline público canónico: **"Describe tu formulario y la IA lo crea."**
+Línea de apoyo: *"Formularios que la gente sí termina"* — la promesa ya no abre en frío
+(exige un contexto que una audiencia de cero no tiene); acompaña como subtítulo en landing,
+segunda línea de bio y cierre de posts.
 
 ## A quién le hablamos (beachhead)
 
@@ -53,7 +56,7 @@ programa de partners. Cada uno vale 10–30 formularios activos.
 
 ### El respondedor (persona terciaria — a quien nunca le vendemos, pero por quien nos eligen)
 Móvil-first, WhatsApp-first, paciencia corta. Nuestro producto para él: una pregunta a la vez,
-progreso guardado, cero fricción. Es la razón del headline.
+progreso guardado, cero fricción. Es la razón de la promesa "la gente sí termina".
 
 ## Contra el statu quo y los competidores
 
@@ -90,5 +93,7 @@ progreso guardado, cero fricción. Es la razón del headline.
 
 ## Historial de cambios
 
+- 2026-08-06 — Headline canónico funcional; la promesa pasa a línea de apoyo
+  ([decisión](decisiones/2026-08-06-headline-funcional.md)).
 - 2026-08-04 — Añadida la operativización del beachhead en 4 avatares con corte 30-sep.
 - 2026-07-30 — Documento inicial.

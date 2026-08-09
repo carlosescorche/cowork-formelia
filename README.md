@@ -6,7 +6,7 @@ arquitectura. El producto y su documentación técnica viven en
 [`formelia-app`](../formelia-app) — este repo gobierna *la empresa que opera ese producto*.
 
 > **Qué es Formelia:** la plataforma AI-first de formularios y captura de datos para el mundo
-> hispanohablante. "Formularios que la gente sí termina." Free $0 · Pro $10 · Team $25.
+> hispanohablante. "Describe tu formulario y la IA lo crea." Free $0 · Pro $10 · Team $25.
 > Lanzamiento público objetivo: **15-ago-2026**.
 
 ## Cómo funciona este repo
