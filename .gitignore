@@ -1,3 +1,13 @@
 .DS_Store
 *.tmp
 node_modules/
+
+# Exportables pesados (vídeo, imágenes renderizadas). Ver assets/README.md.
+# La barra inicial ancla a la raíz: 01-diseno/assets/ sí se versiona.
+/assets/*
+!/assets/README.md
+
+# Artefactos de build de las plantillas. Se regeneran con
+# 01-diseno/herramientas/empaquetar.py, así que no se versionan.
+*-completo.html
+fuentes.css
