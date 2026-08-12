@@ -36,6 +36,20 @@
 
 ## Últimos movimientos
 
+- **2026-08-12** — **Motion de identidad**
+  ([spec](../01-diseno/assets/plantillas/motion-identidad/motion-identidad.md)): pieza de
+  apertura de las cuentas de redes. El isotipo se construye desde un rombo curvo que se
+  divide en dos, cuenta qué hace Formelia y se abre al logotipo. 16,5 s en bucle, CSS puro
+  sin JavaScript, en crema y teal, exportado a 3:4 (feed) y 9:16 (Reels y TikTok).
+  Hallazgo aprovechable: **el isotipo son dos capas idénticas** desplazadas en diagonal que
+  se tocan en una sola esquina, así que la animación sale de su propia geometría.
+  Con la pieza quedan dos **herramientas reutilizables**
+  ([`01-diseno/herramientas/`](../01-diseno/herramientas/README.md)): empaquetado a HTML
+  autocontenido y grabación a MP4 por CDP, sin instalar dependencias. Se estrena también
+  [`assets/`](../assets/README.md) en la raíz para exportables pesados, fuera de git.
+  **Pendiente:** decidir si el 3:4 aguanta en el feed de Instagram o hace falta 4:5, y
+  ponerle música al publicar (los MP4 salen mudos).
+
 - **2026-08-11** — **Línea editorial de carruseles**
   ([spec](../01-diseno/assets/plantillas/carrusel/carrusel-editorial.md)): segundo repertorio de
   láminas alineado con el rediseño de la landing (arte pictórico de fondo, numerales

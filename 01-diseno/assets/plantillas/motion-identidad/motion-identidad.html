@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Formelia — Motion de identidad</title>
+<link rel="stylesheet" href="motion-identidad.css">
+<style>
+  body {
+    margin: 0;
+    padding: 32px 40px 56px;
+    background: #ffffff;
+    color: #383838;
+    font-family: 'Geist', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  h1 { font-family: 'Lexend', sans-serif; font-size: 19px; font-weight: 500; margin: 0 0 6px; color: #0a4d4d; }
+  .nota { font-size: 13px; line-height: 1.6; color: #6b6b6b; max-width: 780px; margin: 0 0 22px; }
+  .barra { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 0 0 22px; }
+  .barra[hidden] { display: none; }
+  button, select {
+    font-family: inherit; font-size: 13px; padding: 7px 14px; border-radius: 8px;
+    border: 1px solid #e5ded0; background: #f8f5f0; color: #0a4d4d; cursor: pointer;
+  }
+  button:hover { background: #f0eae0; }
+  input[type=range] { width: 320px; accent-color: #00786f; }
+  .reloj { font-variant-numeric: tabular-nums; font-size: 13px; color: #6b6b6b; min-width: 84px; }
+  .tira { display: flex; gap: 26px; align-items: flex-start; flex-wrap: wrap; }
+  .col-rotulo { font-size: 12px; color: #6b6b6b; margin: 0 0 8px; letter-spacing: .04em; }
+  .marco { box-shadow: 0 1px 4px rgba(0,0,0,.14); border-radius: 6px; }
+  .geometria { position: absolute; width: 0; height: 0; overflow: hidden; }
+  body.limpio { padding: 0; background: #808080; }
+  body.limpio h1, body.limpio .nota, body.limpio .barra, body.limpio .col-rotulo { display: none; }
+  body.limpio .tira { gap: 0; }
+  body.limpio .marco { box-shadow: none; border-radius: 0; }
+  /* En transparente, el tablero deja ver que no hay fondo — pero solo mirando.
+     En `limpio` (que es el modo con el que se captura) el body no pinta nada:
+     cualquier fondo aquí acaba en el vídeo y mata el alfa. */
+  body.fondo-transparente { background:
+    repeating-conic-gradient(#e9e9e9 0% 25%, #ffffff 0% 50%) 0 0 / 32px 32px; }
+  body.fondo-transparente.limpio { background: transparent; }
+</style>
+
+<h1>Formelia · motion de identidad</h1>
+<p class="nota">
+  Lienzo 1080 × 1440 px (3:4). Duración 16 500 ms, en bucle. Las dos variantes van
+  sincronizadas. La animación es CSS puro: se reproduce aunque el visor no ejecute
+  JavaScript. Los controles de abajo son un añadido y solo aparecen si hay JS.
+  Para capturar a tamaño real: <code>?solo=crema&amp;zoom=1&amp;limpio=1</code>
+  (o <code>solo=teal</code>); <code>&amp;t=8300</code> congela la escena en ese milisegundo.
+</p>
+
+<div class="barra" hidden id="barra">
+  <button id="btn-play">Reiniciar</button>
+  <input type="range" id="scrub" min="0" max="16500" step="10" value="0">
+  <span class="reloj" id="reloj">0.00 s</span>
+  <select id="sel-zoom">
+    <option value="0.34">34 %</option>
+    <option value="0.5" selected>50 %</option>
+    <option value="0.75">75 %</option>
+    <option value="1">100 % (captura)</option>
+  </select>
+</div>
+
+<!-- El wordmark, declarado una sola vez: va trazado, nunca como texto vivo.
+     Las dos capas del isotipo no van aquí: la propiedad `d` solo se anima
+     sobre un <path> real, no sobre un <use>, así que se escriben en cada
+     escena. Son la misma pieza desplazada (+24.66, +42.95), y se tocan en
+     una sola esquina, (82.7 · 102.1). -->
+<svg class="geometria" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="d-palabra" d="M183.451 147V43.8H199.373V147H183.451ZM190.527 103.066V87.7337H243.749V103.066H190.527ZM190.527 59.1326V43.8H250.383V59.1326H190.527ZM300.939 148.474C293.371 148.474 286.589 146.754 280.594 143.314C274.697 139.776 270.028 135.009 266.588 129.014C263.148 122.92 261.428 115.991 261.428 108.226C261.428 100.462 263.148 93.5817 266.588 87.5863C270.028 81.4926 274.697 76.7257 280.594 73.2857C286.589 69.7475 293.371 67.9783 300.939 67.9783C308.409 67.9783 315.092 69.7475 320.989 73.2857C326.984 76.7257 331.702 81.4926 335.142 87.5863C338.582 93.5817 340.302 100.462 340.302 108.226C340.302 115.991 338.582 122.92 335.142 129.014C331.702 135.009 326.984 139.776 320.989 143.314C315.092 146.754 308.409 148.474 300.939 148.474ZM300.939 134.616C305.558 134.616 309.686 133.486 313.323 131.225C316.959 128.866 319.81 125.721 321.874 121.79C323.938 117.76 324.92 113.239 324.822 108.226C324.92 103.115 323.938 98.5943 321.874 94.6629C319.81 90.6332 316.959 87.488 313.323 85.2274C309.686 82.9669 305.558 81.8366 300.939 81.8366C296.319 81.8366 292.142 83.016 288.407 85.3749C284.771 87.6354 281.921 90.7806 279.857 94.8103C277.793 98.7417 276.81 103.214 276.908 108.226C276.81 113.239 277.793 117.76 279.857 121.79C281.921 125.721 284.771 128.866 288.407 131.225C292.142 133.486 296.319 134.616 300.939 134.616ZM356.849 147V69.6H372.181V93.9257L370.707 88.0286C371.788 84.2937 373.606 80.9029 376.162 77.856C378.816 74.8092 381.813 72.4012 385.155 70.632C388.595 68.8629 392.133 67.9783 395.77 67.9783C397.441 67.9783 399.013 68.1257 400.488 68.4206C402.06 68.7154 403.289 69.0594 404.173 69.4526L400.193 85.9646C399.013 85.4732 397.686 85.08 396.212 84.7852C394.836 84.392 393.46 84.1954 392.084 84.1954C389.43 84.1954 386.875 84.736 384.418 85.8172C382.059 86.8 379.946 88.2252 378.078 90.0926C376.309 91.8617 374.884 93.9749 373.803 96.432C372.722 98.7909 372.181 101.395 372.181 104.246V147H356.849ZM416.015 147V69.6H431.347V86.112L428.546 87.8812C429.333 85.3257 430.561 82.8686 432.232 80.5097C434.001 78.1509 436.114 76.0869 438.571 74.3177C441.127 72.4503 443.83 70.976 446.68 69.8949C449.629 68.8137 452.626 68.2732 455.673 68.2732C460.096 68.2732 463.978 69.0103 467.32 70.4846C470.662 71.9589 473.414 74.1703 475.576 77.1189C477.738 80.0674 479.311 83.7532 480.294 88.176L477.935 87.5863L478.967 85.08C480.048 82.8194 481.522 80.7063 483.39 78.7406C485.355 76.6766 487.567 74.8583 490.024 73.2857C492.481 71.7132 495.086 70.4846 497.838 69.6C500.59 68.7154 503.293 68.2732 505.946 68.2732C511.745 68.2732 516.512 69.4526 520.247 71.8114C524.08 74.1703 526.93 77.7577 528.798 82.5737C530.763 87.3897 531.746 93.3852 531.746 100.56V147H516.414V101.445C516.414 97.0217 515.824 93.4343 514.645 90.6823C513.563 87.832 511.893 85.7189 509.632 84.3429C507.371 82.9669 504.472 82.2789 500.934 82.2789C498.182 82.2789 495.577 82.7703 493.12 83.7532C490.761 84.6377 488.697 85.9154 486.928 87.5863C485.159 89.2572 483.783 91.2229 482.8 93.4834C481.817 95.6457 481.326 98.0537 481.326 100.707V147H465.993V101.15C465.993 97.12 465.403 93.7292 464.224 90.9772C463.045 88.1269 461.325 85.9646 459.064 84.4903C456.803 83.016 454.051 82.2789 450.808 82.2789C448.056 82.2789 445.501 82.7703 443.142 83.7532C440.783 84.6377 438.719 85.9154 436.95 87.5863C435.181 89.1589 433.805 91.0754 432.822 93.336C431.839 95.4983 431.347 97.8572 431.347 100.413V147H416.015ZM588.196 148.474C580.235 148.474 573.159 146.803 566.967 143.462C560.873 140.022 556.057 135.353 552.519 129.456C549.079 123.559 547.359 116.777 547.359 109.111C547.359 103.017 548.342 97.464 550.307 92.4514C552.273 87.4389 554.976 83.1143 558.416 79.4777C561.954 75.7429 566.131 72.8926 570.947 70.9269C575.861 68.8629 581.169 67.8309 586.87 67.8309C591.882 67.8309 596.551 68.8137 600.875 70.7794C605.2 72.6469 608.935 75.2514 612.08 78.5932C615.323 81.9349 617.78 85.9154 619.451 90.5349C621.22 95.056 622.056 100.019 621.957 105.425L621.81 111.912H558.563L555.172 99.8229H608.689L606.477 102.329V98.7909C606.183 95.5474 605.101 92.648 603.234 90.0926C601.367 87.5372 599.008 85.5223 596.157 84.048C593.307 82.5737 590.211 81.8366 586.87 81.8366C581.562 81.8366 577.09 82.8686 573.454 84.9326C569.817 86.8983 567.065 89.8469 565.198 93.7783C563.33 97.6114 562.396 102.378 562.396 108.079C562.396 113.485 563.527 118.202 565.787 122.232C568.048 126.163 571.242 129.21 575.37 131.373C579.498 133.535 584.265 134.616 589.671 134.616C593.504 134.616 597.042 133.977 600.285 132.699C603.627 131.422 607.215 129.112 611.048 125.77L618.714 136.533C616.355 138.891 613.456 140.955 610.016 142.725C606.674 144.494 603.087 145.919 599.253 147C595.519 147.983 591.833 148.474 588.196 148.474ZM638.755 147V37.9029H653.94V147H638.755ZM677.968 147V69.6H693.153V147H677.968ZM685.339 52.4983C682.096 52.4983 679.589 51.6629 677.82 49.992C676.051 48.3212 675.167 45.9623 675.167 42.9155C675.167 40.0652 676.051 37.7555 677.82 35.9863C679.688 34.2172 682.194 33.3326 685.339 33.3326C688.583 33.3326 691.089 34.168 692.858 35.8389C694.627 37.5097 695.512 39.8686 695.512 42.9155C695.512 45.7657 694.578 48.0755 692.711 49.8446C690.941 51.6137 688.484 52.4983 685.339 52.4983ZM746.274 148.474C739.886 148.474 734.038 146.705 728.73 143.167C723.521 139.629 719.344 134.813 716.199 128.719C713.054 122.625 711.481 115.745 711.481 108.079C711.481 100.314 713.054 93.4343 716.199 87.4389C719.442 81.3452 723.767 76.5783 729.173 73.1383C734.677 69.6983 740.819 67.9783 747.601 67.9783C751.631 67.9783 755.317 68.568 758.658 69.7474C762 70.9269 764.899 72.5977 767.357 74.76C769.912 76.824 771.976 79.232 773.549 81.984C775.219 84.736 776.251 87.6846 776.645 90.8297L773.254 89.6503V69.6H788.586V147H773.254V128.571L776.792 127.539C776.202 130.193 774.974 132.798 773.106 135.353C771.337 137.81 769.027 140.022 766.177 141.987C763.425 143.953 760.329 145.526 756.889 146.705C753.547 147.885 750.009 148.474 746.274 148.474ZM750.255 134.469C754.874 134.469 758.953 133.338 762.491 131.078C766.03 128.817 768.782 125.721 770.747 121.79C772.811 117.76 773.843 113.19 773.843 108.079C773.843 103.066 772.811 98.5943 770.747 94.6629C768.782 90.7314 766.03 87.6354 762.491 85.3749C758.953 83.1143 754.874 81.984 750.255 81.984C745.734 81.984 741.704 83.1143 738.166 85.3749C734.726 87.6354 731.974 90.7314 729.91 94.6629C727.944 98.5943 726.961 103.066 726.961 108.079C726.961 113.19 727.944 117.76 729.91 121.79C731.974 125.721 734.726 128.817 738.166 131.078C741.704 133.338 745.734 134.469 750.255 134.469Z"/>
+  </defs>
+</svg>
+
+<div class="tira">
+
+  <div data-v="crema">
+    <p class="col-rotulo">Variante crema</p>
+    <div class="marco"><div class="lienzo fondo-crema">
+      <div class="escena">
+
+        <div class="marco-sel">
+          <span class="tirador ns oo"></span><span class="tirador ns ee"></span>
+          <span class="tirador ss oo"></span><span class="tirador ss ee"></span>
+          <span class="rotulo rotulo-1">01_isotipo</span>
+          <span class="rotulo rotulo-2">02_describe</span>
+          <span class="rotulo rotulo-3">03_generando</span>
+          <span class="rotulo rotulo-4">04_completado</span>
+          <span class="rotulo rotulo-5">05_logotipo</span>
+        </div>
+
+        <div class="logo-pos">
+          <svg class="logo" viewBox="0 0 850 184" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="cp-crema" clipPathUnits="userSpaceOnUse">
+                <rect class="wipe" x="176" y="0" width="626" height="184"/>
+              </clipPath>
+            </defs>
+            <path class="capa capa-abajo"  d="M82.8667 102.023C94.0006 95.4006 105.354 89.0267 116.544 82.4951C121.819 79.4169 127.026 76.3914 132.442 73.5672C132.307 76.4916 132.417 80.2678 132.418 83.2566L132.425 101.92C130.038 103.665 127.552 104.928 124.994 106.388L113.1 113.221C111.607 114.093 109.193 115.418 107.846 116.402C107.634 119.3 107.75 122.857 107.726 125.797C107.676 132.107 107.802 138.448 107.714 144.758C105.862 146.066 103.408 147.387 101.413 148.526C96.7775 151.17 92.1219 153.855 87.4135 156.365C86.0155 157.109 84.3336 158.488 82.7523 159.383C82.5758 153.576 82.7088 147.055 82.7118 141.197L82.6909 102.227Z"/>
+            <path class="capa capa-arriba" d="M107.698 30.6169L107.812 30.8509C107.675 40.2984 107.917 49.9239 107.691 59.2893C106.448 60.139 104.187 61.3048 102.811 62.1296C98.4167 64.7645 93.8204 67.1672 89.4154 69.7954C87.3857 71.0064 84.6751 72.3486 82.8559 73.7545C82.7821 78.6788 82.7634 83.6038 82.8 88.5286C82.7747 93.0268 82.797 97.5253 82.8667 102.023L82.6909 102.227C80.8793 103.53 77.9597 104.892 75.9216 106.162C72.4835 108.303 68.7749 110.231 65.2667 112.283C62.8408 113.701 60.5651 115.15 58 116.301C58.2851 102.796 57.9973 89.1201 58.0998 75.6C58.1401 70.2881 57.9852 64.7394 58.154 59.4515C59.3718 58.3003 62.4617 56.6859 64.0091 55.8084L72.0602 51.194L99.9292 35.1389C102.529 33.6589 105.097 32.0463 107.698 30.6169Z"/>
+            <g clip-path="url(#cp-crema)"><use href="#d-palabra"/></g>
+          </svg>
+        </div>
+
+        <div class="ancla">
+          <div class="prompt">
+            <span class="prompt-linea">
+              <span class="prompt-texto">Formulario de contacto para mi clínica</span><i class="caret"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="ancla">
+          <div class="formulario">
+            <div class="campo f-1">
+              <span class="etiqueta">Nombre</span>
+              <div class="entrada e-1"></div>
+            </div>
+            <div class="campo f-2">
+              <span class="etiqueta">Teléfono</span>
+              <div class="entrada e-2"></div>
+            </div>
+            <div class="campo f-3">
+              <span class="etiqueta">Motivo de la consulta</span>
+              <div class="chips">
+                <span class="chip">Primera vez</span>
+                <span class="chip chip-sel">Control</span>
+                <span class="chip">Urgencia</span>
+              </div>
+            </div>
+            <div class="boton-zona f-4">
+              <div class="boton">
+                <span class="boton-texto boton-enviar">Enviar</span>
+                <span class="boton-texto boton-enviado">
+                  <svg class="check" viewBox="0 0 34 34"><path d="M7 17.6 L14 24.4 L27 10.6"/></svg>
+                  Enviado
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="dominio">formelia.io</p>
+      </div>
+    </div></div>
+  </div>
+
+  <div data-v="teal">
+    <p class="col-rotulo">Variante teal</p>
+    <div class="marco"><div class="lienzo fondo-teal">
+      <div class="escena">
+
+        <div class="marco-sel">
+          <span class="tirador ns oo"></span><span class="tirador ns ee"></span>
+          <span class="tirador ss oo"></span><span class="tirador ss ee"></span>
+          <span class="rotulo rotulo-1">01_isotipo</span>
+          <span class="rotulo rotulo-2">02_describe</span>
+          <span class="rotulo rotulo-3">03_generando</span>
+          <span class="rotulo rotulo-4">04_completado</span>
+          <span class="rotulo rotulo-5">05_logotipo</span>
+        </div>
+
+        <div class="logo-pos">
+          <svg class="logo" viewBox="0 0 850 184" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="cp-teal" clipPathUnits="userSpaceOnUse">
+                <rect class="wipe" x="176" y="0" width="626" height="184"/>
+              </clipPath>
+            </defs>
+            <path class="capa capa-abajo"  d="M82.8667 102.023C94.0006 95.4006 105.354 89.0267 116.544 82.4951C121.819 79.4169 127.026 76.3914 132.442 73.5672C132.307 76.4916 132.417 80.2678 132.418 83.2566L132.425 101.92C130.038 103.665 127.552 104.928 124.994 106.388L113.1 113.221C111.607 114.093 109.193 115.418 107.846 116.402C107.634 119.3 107.75 122.857 107.726 125.797C107.676 132.107 107.802 138.448 107.714 144.758C105.862 146.066 103.408 147.387 101.413 148.526C96.7775 151.17 92.1219 153.855 87.4135 156.365C86.0155 157.109 84.3336 158.488 82.7523 159.383C82.5758 153.576 82.7088 147.055 82.7118 141.197L82.6909 102.227Z"/>
+            <path class="capa capa-arriba" d="M107.698 30.6169L107.812 30.8509C107.675 40.2984 107.917 49.9239 107.691 59.2893C106.448 60.139 104.187 61.3048 102.811 62.1296C98.4167 64.7645 93.8204 67.1672 89.4154 69.7954C87.3857 71.0064 84.6751 72.3486 82.8559 73.7545C82.7821 78.6788 82.7634 83.6038 82.8 88.5286C82.7747 93.0268 82.797 97.5253 82.8667 102.023L82.6909 102.227C80.8793 103.53 77.9597 104.892 75.9216 106.162C72.4835 108.303 68.7749 110.231 65.2667 112.283C62.8408 113.701 60.5651 115.15 58 116.301C58.2851 102.796 57.9973 89.1201 58.0998 75.6C58.1401 70.2881 57.9852 64.7394 58.154 59.4515C59.3718 58.3003 62.4617 56.6859 64.0091 55.8084L72.0602 51.194L99.9292 35.1389C102.529 33.6589 105.097 32.0463 107.698 30.6169Z"/>
+            <g clip-path="url(#cp-teal)"><use href="#d-palabra"/></g>
+          </svg>
+        </div>
+
+        <div class="ancla">
+          <div class="prompt">
+            <span class="prompt-linea">
+              <span class="prompt-texto">Formulario de contacto para mi clínica</span><i class="caret"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="ancla">
+          <div class="formulario">
+            <div class="campo f-1">
+              <span class="etiqueta">Nombre</span>
+              <div class="entrada e-1"></div>
+            </div>
+            <div class="campo f-2">
+              <span class="etiqueta">Teléfono</span>
+              <div class="entrada e-2"></div>
+            </div>
+            <div class="campo f-3">
+              <span class="etiqueta">Motivo de la consulta</span>
+              <div class="chips">
+                <span class="chip">Primera vez</span>
+                <span class="chip chip-sel">Control</span>
+                <span class="chip">Urgencia</span>
+              </div>
+            </div>
+            <div class="boton-zona f-4">
+              <div class="boton">
+                <span class="boton-texto boton-enviar">Enviar</span>
+                <span class="boton-texto boton-enviado">
+                  <svg class="check" viewBox="0 0 34 34"><path d="M7 17.6 L14 24.4 L27 10.6"/></svg>
+                  Enviado
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="dominio">formelia.io</p>
+      </div>
+    </div></div>
+  </div>
+
+</div>
+
+<script>
+/* Añadido opcional. La animación no depende de nada de esto: si este script
+   no se ejecuta, la pieza se reproduce igual y en bucle. Aquí solo van los
+   controles, el ajuste fino de medidas y el congelado por ?t= para capturar. */
+(function () {
+  const params = new URLSearchParams(location.search);
+  const solo   = params.get('solo');
+  const zoom   = params.get('zoom');
+  const tFijo  = params.has('t') ? Number(params.get('t')) : null;
+
+  if (params.get('limpio') === '1') document.body.classList.add('limpio');
+  if (zoom) document.documentElement.style.setProperty('--zoom', zoom);
+  if (params.get('formato') === '9x16') {
+    document.documentElement.style.setProperty('--lienzo-alto', '1920px');
+    document.body.classList.add('formato-9x16');
+  }
+  if (params.get('fondo') === 'transparente') document.body.classList.add('fondo-transparente');
+  if (solo) document.querySelectorAll('.tira > [data-v]').forEach(c => {
+    if (c.dataset.v !== solo) c.remove();
+  });
+
+  const lienzos = [...document.querySelectorAll('.lienzo')];
+  const anim = () => lienzos.flatMap(l => l.getAnimations({ subtree: true }));
+
+  /* Contrato con 01-diseno/herramientas/exportar-video.py: duración del
+     ciclo, congelar(ms) y body.dataset.listo cuando ya puede capturarse. */
+  window.DURACION_MS = 16500;
+
+  /* El ancho del texto tecleado y la caja del formulario tienen valor por
+     defecto en el CSS; aquí se afinan a lo que mide el navegador. */
+  function medir() {
+    document.querySelectorAll('.escena').forEach(sc => {
+      const txt = sc.querySelector('.prompt-texto');
+      const clon = txt.cloneNode(true);
+      clon.style.cssText = 'position:absolute;left:-9999px;top:0;width:auto;animation:none;white-space:nowrap';
+      txt.parentNode.appendChild(clon);
+      sc.style.setProperty('--ancho-prompt', clon.offsetWidth + 'px');
+      clon.remove();
+
+      const form = sc.querySelector('.formulario');
+      sc.style.setProperty('--caja-forma-w', form.offsetWidth + 'px');
+      sc.style.setProperty('--caja-forma-h', form.offsetHeight + 'px');
+    });
+  }
+
+  function congelar(t) {
+    anim().forEach(a => { a.pause(); try { a.currentTime = t; } catch (e) {} });
+    reloj.textContent = (t / 1000).toFixed(2) + ' s';
+  }
+  function reiniciar() {
+    anim().forEach(a => { try { a.currentTime = 0; } catch (e) {} a.play(); });
+    seguir();
+  }
+
+  const barra = document.getElementById('barra');
+  const scrub = document.getElementById('scrub');
+  const reloj = document.getElementById('reloj');
+  let rafId = null;
+
+  function seguir() {
+    cancelAnimationFrame(rafId);
+    const paso = () => {
+      const a = anim().find(x => x.animationName === 'caja');
+      const t = a ? Number(a.currentTime) % 16500 : 0;
+      scrub.value = t;
+      reloj.textContent = (t / 1000).toFixed(2) + ' s';
+      rafId = requestAnimationFrame(paso);
+    };
+    paso();
+  }
+
+  document.getElementById('btn-play').onclick = reiniciar;
+  scrub.oninput = () => { cancelAnimationFrame(rafId); congelar(Number(scrub.value)); };
+  document.getElementById('sel-zoom').onchange = (e) =>
+    document.documentElement.style.setProperty('--zoom', e.target.value);
+
+  barra.hidden = false;
+  window.congelar = congelar;
+
+  const listo = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+  listo.then(() => {
+    medir();
+    if (tFijo !== null) { congelar(tFijo); document.body.dataset.listo = '1'; }
+    else seguir();
+  });
+})();
+</script>
+</html>
