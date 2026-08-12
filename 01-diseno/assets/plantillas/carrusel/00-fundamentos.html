@@ -1,0 +1,117 @@
+<!-- @dsCard group="Carruseles" name="Fundamentos" subtitle="Lienzo, rejilla, zonas seguras, paleta y escala tipográfica" -->
+<meta charset="utf-8">
+<title>Carruseles Formelia — Fundamentos</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="carrusel.css">
+<style>
+  body {
+    margin: 0;
+    padding: 48px;
+    background: #fff;
+    font-family: var(--fuente-cuerpo);
+    color: var(--gray-800);
+  }
+  h1 { font-family: var(--fuente-titulo); font-size: 30px; font-weight: 700; color: var(--teal-900); margin: 0 0 8px; }
+  h2 { font-family: var(--fuente-titulo); font-size: 20px; font-weight: 600; color: var(--teal-900); margin: 48px 0 16px; }
+  p.intro { font-size: 15px; line-height: 1.6; max-width: 720px; margin: 0 0 8px; color: var(--gray-600); }
+  table { border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+  th, td { text-align: left; padding: 8px 20px 8px 0; border-bottom: 1px solid var(--gray-200); vertical-align: middle; }
+  th { font-weight: 600; color: var(--gray-600); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--teal-700); }
+  .tonos { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+  .tono { width: 116px; }
+  .tono .muestra { height: 64px; border-radius: 10px; border: 1px solid rgba(0,0,0,.08); }
+  .tono b { display: block; font-size: 12px; font-weight: 600; margin-top: 6px; }
+  .tono span { display: block; font-size: 11px; color: var(--gray-600); font-family: ui-monospace, monospace; }
+  .specimen { margin-top: 8px; }
+  .specimen div { margin-bottom: 14px; color: var(--teal-900); }
+  .specimen small { display: block; font-size: 11px; color: var(--gray-600); font-family: ui-monospace, monospace; margin-top: 2px; letter-spacing: 0; text-transform: none; }
+</style>
+
+<h1>Carruseles Formelia — fundamentos</h1>
+<p class="intro">
+  Todo se dibuja sobre un lienzo de 1080 x 1350 px (4:5). Las medidas de este sistema están
+  expresadas a esa escala. La especificación completa está en <code>carrusel.md</code>.
+</p>
+
+<h2>Lienzo, rejilla y zonas seguras</h2>
+<p class="intro">
+  Margen exterior de 90 px por los cuatro lados: el área viva es de 900 x 1170 px. La rejilla
+  horizontal son 6 columnas de 125 px con medianiles de 30 px. Todo el espaciado vertical es
+  múltiplo de 30 px. En rojo, las bandas donde no va nada esencial: 120 px arriba y 180 px
+  abajo (el visor de documentos de LinkedIn superpone su contador de páginas ahí).
+</p>
+<div class="tira guias">
+  <div>
+    <p class="rotulo">Anatomía con guías</p>
+    <div class="marco">
+      <div class="lienzo esquema-claro">
+        <div class="cuerpo-lamina">
+          <p class="antetitulo">Antetítulo</p>
+          <h2 class="titulo" style="margin:0">Título de lámina en Lexend SemiBold</h2>
+          <p class="cuerpo">Cuerpo en Geist Regular. Una idea por lámina, máximo 28 palabras, con la línea de medida acotada a 840 px.</p>
+        </div>
+        <div class="pie">
+          <div class="progreso"><i style="width:42%"></i></div>
+          <div class="pie-fila">
+            <div class="firma"><span class="marca">formelia.io</span></div>
+            <div>3 / 7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Paleta operativa del carrusel</h2>
+<p class="intro">
+  El acento de acción es siempre teal y hay uno solo por pieza. Éxito es teal, nunca verde.
+  La IA no se pinta de violeta ni se marca con destellos.
+</p>
+<div class="tonos">
+  <div class="tono"><div class="muestra" style="background:#f8f5f0"></div><b>cream-50</b><span>#f8f5f0</span></div>
+  <div class="tono"><div class="muestra" style="background:#e5ded0"></div><b>cream-200</b><span>#e5ded0</span></div>
+  <div class="tono"><div class="muestra" style="background:#00786f"></div><b>teal-700</b><span>#00786f</span></div>
+  <div class="tono"><div class="muestra" style="background:#0a4d4d"></div><b>teal-900</b><span>#0a4d4d</span></div>
+  <div class="tono"><div class="muestra" style="background:#022f2e"></div><b>teal-950</b><span>#022f2e</span></div>
+  <div class="tono"><div class="muestra" style="background:#00d5be"></div><b>teal-400</b><span>#00d5be</span></div>
+  <div class="tono"><div class="muestra" style="background:#383838"></div><b>gray-800</b><span>#383838</span></div>
+  <div class="tono"><div class="muestra" style="background:#6b6b6b"></div><b>gray-600</b><span>#6b6b6b</span></div>
+</div>
+
+<table>
+  <tr><th>Rol</th><th>Esquema claro</th><th>Esquema oscuro</th></tr>
+  <tr><td>Fondo</td><td>cream-50 <code>#f8f5f0</code></td><td>teal-950 <code>#022f2e</code></td></tr>
+  <tr><td>Título</td><td>teal-900 <code>#0a4d4d</code></td><td>cream-50 <code>#f8f5f0</code></td></tr>
+  <tr><td>Cuerpo</td><td>gray-800 <code>#383838</code></td><td>teal-100 <code>#d1eeee</code></td></tr>
+  <tr><td>Acento</td><td>teal-700 <code>#00786f</code></td><td>teal-400 <code>#00d5be</code></td></tr>
+  <tr><td>Pie y tenues</td><td>gray-600 <code>#6b6b6b</code></td><td>cream-50 al 62%</td></tr>
+</table>
+
+<h2>Escala tipográfica a 1080 px</h2>
+<div class="specimen">
+  <div style="font-family:var(--fuente-titulo);font-size:46px;font-weight:700;line-height:1.06;letter-spacing:-.02em">
+    Display 92 / 1.06
+    <small>Lexend Bold · portada · máx. 22 caracteres por línea · previsualizado al 50%</small>
+  </div>
+  <div style="font-family:var(--fuente-titulo);font-size:34px;font-weight:600;line-height:1.12;letter-spacing:-.015em">
+    Título 68 / 1.12
+    <small>Lexend SemiBold · título de lámina · máx. 8 palabras · previsualizado al 50%</small>
+  </div>
+  <div style="font-family:var(--fuente-titulo);font-size:27px;font-weight:500;line-height:1.25">
+    Cita 54 / 1.25
+    <small>Lexend Medium · lámina de frase · previsualizado al 50%</small>
+  </div>
+  <div style="font-family:var(--fuente-cuerpo);font-size:19px;font-weight:400;line-height:1.42;color:var(--gray-800)">
+    Cuerpo 38 / 1.42
+    <small>Geist Regular · máx. 28 palabras · medida 840 px · previsualizado al 50%</small>
+  </div>
+  <div style="font-family:var(--fuente-cuerpo);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-700)">
+    Antetítulo 24 · versalitas
+    <small>Geist SemiBold · tracking 0.12em · previsualizado al 50%</small>
+  </div>
+  <div style="font-family:var(--fuente-cuerpo);font-size:12px;font-weight:500;color:var(--gray-600)">
+    Pie 24 · firma y paginación
+    <small>Geist Medium · previsualizado al 50%</small>
+  </div>
+</div>

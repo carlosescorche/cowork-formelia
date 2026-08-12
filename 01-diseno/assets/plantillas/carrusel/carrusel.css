@@ -1,0 +1,362 @@
+/* ==========================================================================
+   Formelia — Composición de láminas de carrusel
+   Requiere tokens.css. Toda lámina es un .lienzo dentro de un .marco.
+   ========================================================================== */
+
+/* ---------- Contenedor de previsualización ---------- */
+
+.tira {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.marco {
+  width: calc(var(--lienzo-ancho) * var(--zoom));
+  height: calc(var(--lienzo-alto) * var(--zoom));
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  flex: none;
+}
+
+.rotulo {
+  font-family: var(--fuente-cuerpo);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-600);
+  margin: 0 0 8px;
+}
+
+/* ---------- Lienzo ---------- */
+
+.lienzo {
+  width: var(--lienzo-ancho);
+  height: var(--lienzo-alto);
+  transform: scale(var(--zoom));
+  transform-origin: top left;
+  background: var(--fondo);
+  color: var(--tinta-cuerpo);
+  font-family: var(--fuente-cuerpo);
+  padding: var(--margen);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* El bloque principal empuja el pie al fondo del lienzo.
+   Por defecto ancla arriba: así el título cae en la misma altura en todas las
+   láminas de contenido y no baila al deslizar. */
+.lienzo > .cuerpo-lamina {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
+}
+
+.lienzo > .cuerpo-lamina.centrada { justify-content: center; }  /* respiro: cifra y cita */
+.lienzo > .cuerpo-lamina.al-final { justify-content: flex-end; } /* portada y cierre */
+
+/* ---------- Tipografía ---------- */
+
+.antetitulo {
+  font-family: var(--fuente-cuerpo);
+  font-size: var(--antetitulo);
+  font-weight: 600;
+  letter-spacing: var(--tr-caps);
+  text-transform: uppercase;
+  color: var(--acento);
+  margin: 0 0 var(--ritmo);
+}
+
+.display {
+  font-family: var(--fuente-titulo);
+  font-size: var(--display);
+  font-weight: 700;
+  line-height: var(--lh-display);
+  letter-spacing: var(--tr-display);
+  color: var(--tinta-titulo);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.display.corto { font-size: var(--display-corto); }
+
+.titulo {
+  font-family: var(--fuente-titulo);
+  font-size: var(--titulo);
+  font-weight: 600;
+  line-height: var(--lh-titulo);
+  letter-spacing: var(--tr-titulo);
+  color: var(--tinta-titulo);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.titulo.largo { font-size: var(--titulo-sm); }
+
+.cuerpo {
+  font-size: var(--cuerpo);
+  font-weight: 400;
+  line-height: var(--lh-cuerpo);
+  color: var(--tinta-cuerpo);
+  margin: var(--ritmo) 0 0;
+  max-width: 840px;
+}
+
+.cuerpo.sm { font-size: var(--cuerpo-sm); }
+
+.destacado { color: var(--acento); }
+
+.cita {
+  font-family: var(--fuente-titulo);
+  font-size: var(--cita);
+  font-weight: 500;
+  line-height: var(--lh-cita);
+  letter-spacing: -0.01em;
+  color: var(--tinta-titulo);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.cita::before { content: '“'; }
+.cita::after  { content: '”'; }
+
+.atribucion {
+  font-size: var(--cuerpo-sm);
+  color: var(--tinta-tenue);
+  margin: var(--ritmo) 0 0;
+}
+
+.cifra {
+  font-family: var(--fuente-titulo);
+  font-size: var(--cifra);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--acento);
+  margin: 0 0 var(--ritmo);
+}
+
+/* ---------- Lista (máximo 4 ítems) ---------- */
+
+.lista {
+  list-style: none;
+  margin: calc(var(--ritmo) * 2) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--ritmo);
+}
+
+.lista li {
+  font-size: var(--cuerpo);
+  line-height: var(--lh-cuerpo);
+  color: var(--tinta-cuerpo);
+  padding-left: 56px;
+  position: relative;
+}
+
+.lista li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--acento);
+  font-weight: 500;
+}
+
+.lista.numerada { counter-reset: item; }
+
+.lista.numerada li::before {
+  counter-increment: item;
+  content: counter(item);
+  font-family: var(--fuente-titulo);
+  font-weight: 600;
+  font-size: var(--cuerpo-sm);
+}
+
+/* ---------- Chip de frase (lámina de ejemplo) ---------- */
+
+.chip {
+  display: inline-block;
+  font-size: var(--cuerpo-sm);
+  line-height: 1.35;
+  color: var(--tinta-cuerpo);
+  background: transparent;
+  border: 2px solid var(--linea);
+  border-radius: var(--radio-chip);
+  padding: 24px 32px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---------- Marcos de captura (siempre capturas reales) ---------- */
+
+.marco-telefono {
+  width: 560px;
+  border-radius: var(--radio-telefono);
+  border: 14px solid var(--gray-950);
+  background: var(--gray-950);
+  overflow: hidden;
+  box-shadow: var(--sombra-marco);
+  margin: calc(var(--ritmo) * 2) auto 0;
+}
+
+.marco-telefono img { display: block; width: 100%; }
+
+.marco-navegador {
+  width: 900px;
+  border-radius: var(--radio-tarjeta);
+  background: #fff;
+  border: 2px solid var(--gray-200);
+  overflow: hidden;
+  box-shadow: var(--sombra-tarjeta);
+  margin: calc(var(--ritmo) * 2) auto 0;
+}
+
+.marco-navegador .barra {
+  height: 56px;
+  background: var(--gray-100);
+  border-bottom: 2px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+.marco-navegador .barra span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gray-400);
+}
+
+.marco-navegador img { display: block; width: 100%; }
+
+/* Variante para el cierre con captura: más estrecha y con recorte 16:9,
+   para que quepan título, captura y llamada a la acción en la misma lámina. */
+.marco-navegador.compacto {
+  width: 780px;
+  margin: var(--ritmo) 0 0;  /* alineada a la izquierda, como el texto y la llamada a la acción */
+}
+
+/* Hueco de captura pendiente: nunca se publica, sirve de maqueta. */
+.hueco-captura {
+  aspect-ratio: 4 / 3;
+  background: repeating-linear-gradient(
+    45deg, var(--gray-100), var(--gray-100) 20px, var(--gray-50) 20px, var(--gray-50) 40px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--gray-600);
+}
+
+/* ---------- Pie: progreso, firma y paginación ---------- */
+
+.pie {
+  flex: none;
+  padding-top: var(--ritmo);
+}
+
+.progreso {
+  height: var(--radio-barra);
+  background: var(--pista);
+  border-radius: var(--radio-barra);
+  overflow: hidden;
+  margin-bottom: var(--ritmo);
+}
+
+.progreso i {
+  display: block;
+  height: 100%;
+  background: var(--acento);
+  border-radius: var(--radio-barra);
+}
+
+.pie-fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--pie);
+  font-weight: 500;
+  color: var(--tinta-tenue);
+  letter-spacing: 0.02em;
+}
+
+.firma { display: flex; align-items: center; gap: 14px; }
+
+.firma .icono { width: 34px; height: 34px; display: block; }
+
+.firma .marca {
+  font-family: var(--fuente-titulo);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--tinta-tenue);
+}
+
+/* ---------- Cierre ---------- */
+
+.logo-cierre { display: flex; align-items: center; gap: 22px; margin-bottom: calc(var(--ritmo) * 2); }
+.logo-cierre .icono { width: 76px; height: 76px; display: block; }
+
+.logo-cierre .wordmark {
+  font-family: var(--fuente-titulo);
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--tinta-titulo);
+}
+
+.cta {
+  display: inline-block;
+  align-self: flex-start;   /* abraza su texto: si no, el flex la estira a todo el ancho */
+  font-family: var(--fuente-cuerpo);
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--cream-50);
+  background: var(--teal-700);
+  border-radius: var(--radio-chip);
+  padding: 30px 48px;
+  margin-top: calc(var(--ritmo) * 2);
+}
+
+.esquema-oscuro .cta { background: var(--teal-400); color: var(--teal-950); }
+
+.dominio {
+  font-family: var(--fuente-titulo);
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--acento);
+  margin: var(--ritmo) 0 0;
+}
+
+/* ---------- Guías (solo previsualización, nunca se exportan) ---------- */
+
+.guias .lienzo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to right,
+      rgba(250, 68, 68, 0.10) 0 var(--margen),
+      transparent var(--margen) calc(100% - var(--margen)),
+      rgba(250, 68, 68, 0.10) calc(100% - var(--margen)) 100%),
+    linear-gradient(to bottom,
+      rgba(250, 68, 68, 0.10) 0 120px,
+      transparent 120px calc(100% - 180px),
+      rgba(250, 68, 68, 0.10) calc(100% - 180px) 100%),
+    repeating-linear-gradient(to right,
+      transparent 0 var(--margen),
+      rgba(0, 120, 111, 0.08) var(--margen) calc(var(--margen) + var(--columna)),
+      transparent calc(var(--margen) + var(--columna)) calc(var(--margen) + var(--columna) + var(--medianil)));
+}

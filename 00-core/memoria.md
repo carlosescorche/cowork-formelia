@@ -36,12 +36,22 @@
 
 ## Últimos movimientos
 
-- **2026-08-09** — Propuestas de la semana 1 escritas (tema: qué es Formelia) y **el contenido
-  de cuentas personales sale de este repo**: pasa a
-  `../cowork-personal/01-contenido/2026-08-plan-agosto/` con su propia tormenta de ideas. Este
-  repo queda solo con las cuentas de marca. La frontera del
-  [README personal](../../cowork-personal/README.md) se cumple ahora también en el contenido,
-  no solo en la identidad.
+- **2026-08-11** — **Línea editorial de carruseles**
+  ([spec](../01-diseno/assets/plantillas/carrusel/carrusel-editorial.md)): segundo repertorio de
+  láminas alineado con el rediseño de la landing (arte pictórico de fondo, numerales
+  contorneados, placas de crema, banda de cierre con grano). Patrones extraídos del código de
+  `formelia-app/src/components/marketing/`, no de capturas. **Convive con la línea actual sin
+  modificarla:** todo cuelga de la clase `linea-editorial`. Pendiente de decidir qué carruseles
+  van en cada línea; por defecto sigue la actual. Riesgo: el rediseño de la landing sigue sin
+  commitear, así que la línea puede desalinearse si cambia.
+- **2026-08-10** — **Sistema de carruseles** en
+  [`01-diseno/assets/plantillas/carrusel/`](../01-diseno/assets/plantillas/carrusel/carrusel.md):
+  lienzo 1080x1350, rejilla de 6 columnas, zonas seguras, dos esquemas de color (claro para
+  contenido, oscuro para portada y cierre), escala tipográfica propia y seis tipos de lámina,
+  con la Pieza 4C montada de ejemplo. Diseñado para subirse como proyecto de sistema de diseño
+  en Claude Design: el repo manda, Claude Design ejecuta. Discrepancia detectada y pendiente:
+  teal-500 figura como `#159999` en [`marca/identidad-visual.md`](marca/identidad-visual.md) y
+  como `#129f9f` en la fuente canónica del producto.
 - **2026-08-08** — **Avatares: amplio primero, acotar con datos**
   ([decisión](decisiones/2026-08-08-avatares-amplio-primero.md)). Con audiencia cero, acotar
   antes de tener señal es adivinar: el contenido arranca lo más amplio posible y los cuatro
@@ -53,13 +63,6 @@
   [`avatares.md`](../02-marketing/avatares.md); actualizados
   [`posicionamiento.md`](posicionamiento.md) y la
   [estrategia de marketing](../02-marketing/estrategia.md).
-- **2026-08-08** — Plan de contenido de agosto en tormenta de ideas
-  ([brainstorm](../02-marketing/campanas/2026-08-biblioteca-fundacional/brainstorm.md), 68
-  ideas, pendiente de aprobación). Marco fijado por el founder: **no se menciona la fecha de
-  lanzamiento**, se habla del producto como algo que ya está en producción, todo atemporal y
-  en lenguaje simple (sin jerga ni palabras en inglés). Pendiente al aprobar: reescribir la
-  sección "Campaña activa" de la estrategia de marketing, que aún describe la campaña de
-  lanzamiento con cuenta regresiva.
 - **2026-08-08** — **Regla de marca nueva: prohibido usar iconos y emoji** en todo lo que
   produzcamos (documentos, copy, posts, briefs, tablas, títulos). Los estados y etiquetas van
   con palabras. Única excepción: que el founder lo pida para una pieza concreta. Registrada

@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Formelia — Tokens del sistema de carruseles
+   Escala de trabajo: lienzo de 1080 x 1350 px (4:5). Todos los valores están
+   expresados a esa escala; no hay unidades relativas al viewport a propósito.
+
+   Fuente de verdad de color y tipografía:
+     ../../../../00-core/marca/identidad-visual.md
+     ../../../../../formelia-app/docs/design/color-system.md   (canónica)
+     ../../../../../formelia-app/docs/design/typography.md     (canónica)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Geist:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ---------- Forest Teal (primario) ---------- */
+  --teal-50:  #e8f7f7;
+  --teal-100: #d1eeee;
+  --teal-300: #5fc9c9;
+  --teal-400: #00d5be;
+  --teal-500: #129f9f;
+  --teal-600: #009689;
+  --teal-700: #00786f;   /* primario semántico: acento de acción */
+  --teal-800: #0c5c5c;
+  --teal-900: #0a4d4d;
+  --teal-950: #022f2e;
+
+  /* ---------- Warm Cream (superficies) ---------- */
+  --cream-50:  #f8f5f0;
+  --cream-100: #f0eae0;
+  --cream-200: #e5ded0;
+  --cream-300: #d4c9b8;
+  --cream-500: #b5a288;
+  --cream-700: #7d6d58;
+  --cream-900: #3d3428;
+
+  /* ---------- Grises ---------- */
+  --gray-50:  #f9f9f9;
+  --gray-100: #f2f2f2;
+  --gray-200: #e5e5e5;
+  --gray-400: #b8b8b8;
+  --gray-600: #6b6b6b;
+  --gray-800: #383838;
+  --gray-950: #1a1a1a;
+  --negro:    #0d0d0d;
+
+  /* ---------- Tipografía ---------- */
+  --fuente-titulo: 'Lexend', 'Helvetica Neue', Arial, sans-serif;
+  --fuente-cuerpo: 'Geist', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+  --display:        92px;  /* portada */
+  --display-corto: 118px;  /* portada de 2-3 palabras */
+  --cifra:         150px;  /* lámina de dato */
+  --titulo:         68px;  /* título de lámina */
+  --titulo-sm:      56px;  /* título de lámina largo (más de 6 palabras) */
+  --cita:           54px;
+  --cuerpo:         38px;
+  --cuerpo-sm:      30px;
+  --antetitulo:     24px;
+  --pie:            24px;
+
+  --lh-display: 1.06;
+  --lh-titulo:  1.12;
+  --lh-cita:    1.25;
+  --lh-cuerpo:  1.42;
+
+  --tr-display: -0.02em;
+  --tr-titulo:  -0.015em;
+  --tr-caps:     0.12em;
+
+  /* ---------- Rejilla y ritmo ---------- */
+  --lienzo-ancho: 1080px;
+  --lienzo-alto:  1350px;
+  --margen:        90px;   /* área viva: 900 x 1170 */
+  --columna:      125px;   /* 6 columnas */
+  --medianil:      30px;   /* 5 medianiles */
+  --ritmo:         30px;   /* todo espaciado vertical es múltiplo de 30 */
+
+  /* ---------- Radios (escalados desde el producto) ---------- */
+  --radio-barra:    6px;   /* rounded-bar 3px x2 */
+  --radio-chip:    20px;   /* rounded-input 10px x2 */
+  --radio-tarjeta: 28px;   /* rounded-card 14px x2 */
+  --radio-telefono: 56px;
+
+  /* ---------- Sombras (escaladas: halo amplio, nunca dura) ---------- */
+  --sombra-tarjeta: 0 4px 80px rgba(0, 0, 0, 0.08);
+  --sombra-marco:   0 12px 100px rgba(2, 47, 46, 0.14);
+
+  /* ---------- Zoom de previsualización ----------
+     El lienzo se dibuja siempre a 1080x1350 y se escala para verlo.
+     Para exportar a tamaño real: --zoom: 1. */
+  --zoom: 0.4;
+}
+
+/* ---------- Esquema claro (por defecto: láminas de contenido) ---------- */
+.esquema-claro {
+  --fondo: var(--cream-50);
+  --tinta-titulo: var(--teal-900);
+  --tinta-cuerpo: var(--gray-800);
+  --tinta-tenue: var(--gray-600);
+  --acento: var(--teal-700);
+  --linea: var(--cream-200);
+  --pista: var(--cream-200);
+}
+
+/* ---------- Esquema oscuro (reservado a portada y cierre) ---------- */
+.esquema-oscuro {
+  --fondo: var(--teal-950);
+  --tinta-titulo: var(--cream-50);
+  --tinta-cuerpo: var(--teal-100);
+  --tinta-tenue: rgba(248, 245, 240, 0.62);
+  --acento: var(--teal-400);
+  --linea: rgba(248, 245, 240, 0.16);
+  --pista: rgba(248, 245, 240, 0.16);
+}

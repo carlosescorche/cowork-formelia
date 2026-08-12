@@ -1,0 +1,83 @@
+<!-- @dsCard group="Carruseles" name="Contenido" subtitle="Título y cuerpo, lista de pasos, y frase de ejemplo" -->
+<meta charset="utf-8">
+<title>Carruseles Formelia — Contenido</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="carrusel.css">
+<style>
+  body { margin: 0; padding: 40px; background: #fff; font-family: var(--fuente-cuerpo); }
+  .nota { font-size: 13px; line-height: 1.6; color: var(--gray-600); max-width: 720px; margin: 0 0 28px; }
+</style>
+
+<p class="nota">
+  Láminas intermedias, siempre en esquema claro. Una idea por lámina: título de máximo 8
+  palabras y cuerpo de máximo 28. Si no cabe, no es una lámina, son dos. La lista admite hasta
+  4 ítems; con más, se parte. Todas llevan pie completo: progreso, firma y paginación.
+</p>
+
+<div class="tira">
+
+  <div>
+    <p class="rotulo">Título y cuerpo</p>
+    <div class="marco">
+      <div class="lienzo esquema-claro">
+        <div class="cuerpo-lamina">
+          <p class="antetitulo">Paso 2</p>
+          <h2 class="titulo">La IA arma el primer borrador</h2>
+          <p class="cuerpo">Sin plantillas y sin arrastrar cajas. Lo que escribiste ya es un formulario con sus preguntas.</p>
+        </div>
+        <div class="pie">
+          <div class="progreso"><i style="width:28%"></i></div>
+          <div class="pie-fila">
+            <div class="firma"><span class="marca">formelia.io</span></div>
+            <div>2 / 7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p class="rotulo">Lista numerada (máx. 4)</p>
+    <div class="marco">
+      <div class="lienzo esquema-claro">
+        <div class="cuerpo-lamina">
+          <p class="antetitulo">Lo que cambias pidiéndolo</p>
+          <h2 class="titulo largo">Se lo dices con palabras, no con menús</h2>
+          <ol class="lista numerada">
+            <li>Quita la pregunta cuatro</li>
+            <li>Agrega una de presupuesto</li>
+            <li>Haz obligatorio el teléfono</li>
+          </ol>
+        </div>
+        <div class="pie">
+          <div class="progreso"><i style="width:42%"></i></div>
+          <div class="pie-fila">
+            <div class="firma"><span class="marca">formelia.io</span></div>
+            <div>3 / 7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p class="rotulo">Frase de ejemplo (chip)</p>
+    <div class="marco">
+      <div class="lienzo esquema-claro">
+        <div class="cuerpo-lamina">
+          <p class="antetitulo">Escribes esto</p>
+          <div class="chip">Inscripción a un taller, con datos de contacto y forma de pago</div>
+          <h2 class="titulo" style="margin-top:60px">Y sale un formulario listo para publicar</h2>
+        </div>
+        <div class="pie">
+          <div class="progreso"><i style="width:57%"></i></div>
+          <div class="pie-fila">
+            <div class="firma"><span class="marca">formelia.io</span></div>
+            <div>4 / 7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
