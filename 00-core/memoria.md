@@ -85,33 +85,12 @@
   calendario, flujo de aprobación de marketing, roadmap, checklist legal y PRDs quedaron en
   palabras. La iconografía funcional de la UI del producto no cambia (la rige
   [identidad-visual.md](marca/identidad-visual.md)).
-- **2026-08-08** — Tablero de aprobación creado en Notion
-  ([Formelia — Calendario de contenido](https://app.notion.com/p/2edd98f1b797488497dda718cba2dc8b)):
-  base con vista calendario + kanban del flujo idea→publicada. El primer lote de 13 ideas
-  para la semana de lanzamiento fue **descartado completo por el founder** (movido a "Ideas
-  descartadas" en Notion); el tablero quedó en blanco. **Pendiente urgente: replanificar la
-  semana del 11–15 con el founder antes del lun 11** — entender qué falló del primer lote
-  antes de proponer el segundo.
-- **2026-08-06** — Nuevo headline canónico: **"Describe tu formulario y la IA lo crea"** (el
+ **2026-08-06** — Nuevo headline canónico: **"Describe tu formulario y la IA lo crea"** (el
   mensaje funcional abre en frío; "Formularios que la gente sí termina" pasa a línea de apoyo
   — [decisión](decisiones/2026-08-06-headline-funcional.md)). Pendiente: adaptar el copy de
   la landing en `formelia-app` y revisar las piezas sembradas del calendario con el gancho
   nuevo.
-- **2026-08-04** — Se crea `../cowork-personal/` (repo separado): la marca personal del
-  founder (build in public, narrativa, red) se gestiona allí; este repo define solo qué
-  aportan las cuentas personales a la distribución de Formelia. Stack de arte redefinido:
-  dirección de arte por pieza con Higgsfield + HeyGen vía MCP (calidad editorial, sin
-  plantillas fijas), founder real y UI real como límites. Tablero de aprobación en Notion +
-  assets en Drive + programación Metricool, todo vía MCP.
-- **2026-08-04** — Sesión de estrategia H2 con el founder (12 preguntas respondidas):
-  escritos el [roadmap de producto](../04-producto/roadmap.md), los
-  [4 avatares](../02-marketing/avatares.md), la
-  [estrategia de marketing v2](../02-marketing/estrategia.md), el calendario de las 2 semanas
-  de lanzamiento, prioridades de growth con fechas y la voz por cuenta (personal vs marca).
-- **2026-08-04** — Reestructuración de áreas: quedan diseño, marketing, growth, producto y
-  arquitectura; marca y operaciones pasan a `00-core/`; comunicación y research se disuelven.
-  La estrategia de marketing se reinició y quedó redefinida el mismo día (v2).
-- **2026-07-30** — Se crea Formelia HQ (`cowork/`): estructura de áreas, estrategias iniciales
+**2026-07-30** — Se crea Formelia HQ (`cowork/`): estructura de áreas, estrategias iniciales
   por equipo y skills.
 
 ## Aprendizajes acumulados

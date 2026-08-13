@@ -173,7 +173,3 @@ consolidación (hasta 30-sep, semanas temáticas por avatar). Brief en [campanas
   pilar de educación operativa y la medición; el corte del 30-sep deja de ser automático.
 - 2026-08-08 — Aplicada la regla de marca de **cero iconos y emoji**: el flujo de aprobación
   y los estados del calendario pasan a nombrarse con palabras.
-- 2026-08-04 — **v2.** Reescrita tras el reinicio: 4 avatares con corte, 6 superficies en 4
-  canales, blog propio en formelia.io, sistema de producción founder+Claude, herramientas.
-- 2026-08-04 — Reinicio total (v1 descartada).
-- 2026-07-30 — Versión inicial (descartada).

@@ -95,11 +95,3 @@ progreso guardado, cero fricción. Es la razón de la promesa "la gente sí term
 - Español nativo de verdad: producto, plantillas, soporte y legales escritos primero en español.
 
 ## Historial de cambios
-
-- 2026-08-08 — La operativización del beachhead pasa a **amplio primero**: los avatares dejan
-  de filtrar la audiencia y pasan a ser la fuente del ejemplo
-  ([decisión](decisiones/2026-08-08-avatares-amplio-primero.md)).
-- 2026-08-06 — Headline canónico funcional; la promesa pasa a línea de apoyo
-  ([decisión](decisiones/2026-08-06-headline-funcional.md)).
-- 2026-08-04 — Añadida la operativización del beachhead en 4 avatares con corte 30-sep.
-- 2026-07-30 — Documento inicial.

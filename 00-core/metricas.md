@@ -45,15 +45,12 @@ FAS?*
 | --- | --- |
 | [Marketing](../02-marketing/estrategia.md) | Alcance, CTR a landing, signups por fuente de contenido |
 | [Growth](../03-growth/estrategia.md) | Signups/mes por canal, activación, conversión free→pago, CTR del badge, comunidades |
-| [Producto](../04-producto/estrategia.md) | Activación (registro → publicado), adopción de features, share de creación con IA |
-| [Arquitectura](../05-arquitectura/estrategia.md) | Costo de IA por operación, latencia, incidentes |
-| [Operaciones (core)](operaciones/estrategia.md) | Margen bruto IA, burn, runway, compliance en verde |
 
 ## Tablero mensual (llenar el día 1 de cada mes)
 
 | Mes | Registros acum. | De pago | FAS | Activación | Signups orgánicos % | MRR |
 | --- | --- | --- | --- | --- | --- | --- |
-| ago-2026 (lanzamiento 15) | — | — | — | — | — | — |
+| ago-2026 (lanzamiento 24) | — | — | — | — | — | — |
 | sep-2026 | — | — | — | — | — | — |
 | oct-2026 | — | — | — | — | — | — |
 
