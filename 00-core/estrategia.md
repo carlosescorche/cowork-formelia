@@ -30,12 +30,11 @@ distribuir y aprender**. Este repo existe para operar exactamente eso.
 
 ### Q3 2026 (ahora → sep)
 
-1. **Gate de lanzamiento (jul):** cerrar bloqueantes legales (identidad del operador, buzones
+1. **Gate de lanzamiento (ago):** cerrar bloqueantes legales (identidad del operador, buzones
    legal@/privacy@, DPAs), recalcular economía de tokens con precios reales Cerebras/OpenAI,
    matriz `LimitDialog` verificada, smoke E2E en verde. → seguimiento en
    [`00-core/operaciones/`](operaciones/estrategia.md).
-2. **Lanzamiento público 15-ago-2026:** dominio público, onboarding pulido, disclosure AI Act
-   (vigente desde 02-ago).
+2. **Lanzamiento público 24-ago-2026:** dominio público, onboarding pulido, disclosure AI Act.
 3. **Distribución compuesta (ago–sep):** `llms.txt` + contenido agent-readable, 30+ plantillas
    como landings indexables, lanzamiento en comunidades hispanas, badge "Hecho con Formelia" con
    landing de conversión. → ejecución en [`03-growth/`](../03-growth/estrategia.md) y
