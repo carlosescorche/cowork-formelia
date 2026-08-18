@@ -25,8 +25,10 @@ empieza desde ella, no desde cero.
    (`src/app/(app)/app.css`, `src/app/(respondent)/respondent.css`, componentes en
    `src/components/`, copy en `src/messages/es/`): tokens, radios, sombras y textos se
    copian literales de ahí, nunca se inventan. **No puedes autenticarte con contraseñas**
-   aunque te las den: si hace falta ver una pantalla con login, pide capturas o que el
-   founder navegue él mismo en el panel.
+   aunque te las den: si hace falta ver una pantalla con login, ejecuta
+   `01-diseno/herramientas/capturar-ui.py` (hace el login él solo con la cuenta demo,
+   leyendo las credenciales del `.env` de la raíz — tú nunca las tecleas), pide capturas,
+   o que el founder navegue él mismo en el panel.
 3. **Lee `00-core/marca/identidad-visual.md`** si la pieza usa la marca. Las escenas de
    "dolor" (formularios genéricos del problema) van sin marca Formelia a propósito:
    escala de grises, tipografía de sistema. El rojo de resaltado de dolor es el de error

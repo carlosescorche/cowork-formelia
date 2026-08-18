@@ -122,9 +122,24 @@ python3 capturar-ui.py plan-captura.json --salida capturas/
 
 Las credenciales nunca van en el plan: el plan usa `${VARIABLES}` y el script las
 sustituye desde el `.env` de la raíz del repo (que está en `.gitignore`). Con `--ver`
-ejecuta con Chrome visible, para depurar un plan que falla. Los verbos y un ejemplo
-completo con login están documentados en el skill `pantallas-reel`
-(`.claude/skills/pantallas-reel/references/plan-captura.md`), que es quien lo usa.
+ejecuta con Chrome visible, para depurar un plan que falla. Un plan de ejemplo con login
+está en la cabecera del propio script.
+
+Cada paso del plan es un objeto de una sola clave. Verbos:
+
+| Verbo | Argumento | Qué hace |
+| --- | --- | --- |
+| `ir` | ruta o URL absoluta | Navega y espera a que la página cargue del todo |
+| `esperar` | selector CSS | Espera a que el elemento exista |
+| `esperar_url` | fragmento de URL | Espera a que la URL lo contenga |
+| `pausa` | milisegundos | Espera fija |
+| `clic` | selector CSS | Espera el elemento y le envía un clic real al centro |
+| `escribir` | `[selector, texto]` | Escribe con eventos que un React controlado reconoce |
+| `tecla` | nombre de tecla (`Enter`) | Pulsa y suelta una tecla |
+| `desplazar` | píxeles | Scroll vertical |
+| `viewport` | objeto viewport | Cambia tamaño, escala y modo móvil en caliente |
+| `evaluar` | expresión JS | Ejecuta JavaScript en la página |
+| `captura` | nombre sin extensión | Guarda un PNG en la carpeta de salida |
 
 ## Cómo construir una pieza que funcione con esto
 

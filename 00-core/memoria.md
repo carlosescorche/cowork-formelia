@@ -60,6 +60,12 @@
   rodaje. Credenciales de la cuenta demo en `.env` de la raíz, fuera de git. Probado de punta
   a punta con login simulado y export real por escena; falta el piloto contra la app
   corriendo (`formelia-app` en el puerto 3020).
+  *(Nota 2026-08-18: ese skill ya no existe en el repo — su sucesor es `escenas-reel`
+  (`.claude/skills/escenas-reel/`), que reconstruye las pantallas como animación HTML desde
+  el código del producto en vez de capturar la app, y es el que produjo las escenas del
+  17-ago. [`capturar-ui.py`](../01-diseno/herramientas/capturar-ui.py) sigue disponible como
+  herramienta independiente, con sus verbos documentados en
+  [`01-diseno/herramientas/README.md`](../01-diseno/herramientas/README.md).)*
 
 - **2026-08-16** — **Dos guiones de reel aprobados y con brief de producción** para
   `@joinformelia` (pilar educación operativa, réplica en TikTok):

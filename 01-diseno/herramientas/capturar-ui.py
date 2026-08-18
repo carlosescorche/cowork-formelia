@@ -27,8 +27,7 @@ PLAN DE EJEMPLO
       ]
     }
 
-VERBOS: ver el README de esta carpeta o references/plan-captura.md del skill
-pantallas-reel.
+VERBOS: la tabla completa esta en el README de esta carpeta.
 
 POR QUE ASI
   - Un plan versionable hace la captura repetible: cuando la UI cambie, se
