@@ -30,11 +30,65 @@
 
 ## Decisiones recientes
 
+- [2026-08-14 — El headline público abre con la promesa, no con el mecanismo](decisiones/2026-08-14-headline-promesa.md)
 - [2026-08-04 — Estrategia operativa H2-2026 (avatares, canales, blog, recursos)](decisiones/2026-08-04-estrategia-h2-2026.md)
 - [2026-08-04 — Reestructuración de áreas y reinicio de marketing](decisiones/2026-08-04-reestructuracion-areas.md)
 - [2026-07-30 — Creación del entorno de gestión (este repo)](decisiones/2026-07-30-creacion-entorno-gestion.md)
 
 ## Últimos movimientos
+
+- **2026-08-17** — **Escenas animadas del reel «La pregunta cara» exportadas**
+  (`assets/2026-08/reel-pregunta-cara-escenas/`): tres MP4 1080×1920 a 30 fps para los
+  bloques 22-29 y 34-42 del [brief](../02-marketing/redes/instagram/2026-08-16-reel-pregunta-cara/brief.md),
+  aprobados por el founder tras cinco rondas de iteración en chat. Escena 1 (10 s): la misma
+  pregunta como texto libre (teclado iPhone en gris, cursor) y como selector (radio cards,
+  selección teal, pantalla de gracias); escena 2 (4 s): el gráfico real de abandono por
+  pregunta sobre la pintura de la home, con la fila de la caída enmarcada en rojo sutil;
+  escena 3 (7 s): el dock de IA cambiando el campo a selector, con el RadialSpinner real.
+  Fidelidad copiada del código del producto (`DropoffWaterfall`, `OptionChip`, `AIActionDock`,
+  literales de `messages/es`). Fuente junto a los MP4; pipeline `empaquetar.py` +
+  `exportar-video.py`. El montaje con voz va en Final Cut; artes crudos a Drive.
+- **2026-08-16** — **Skill nuevo `pantallas-reel`** (`.claude/skills/pantallas-reel/`):
+  produce las pantallas animadas de un reel con UI real — captura la app con la cuenta demo
+  siguiendo un plan JSON versionable (herramienta nueva
+  [`capturar-ui.py`](../01-diseno/herramientas/capturar-ui.py), CDP sin dependencias),
+  anima cada escena a 1080x1920 y exporta **un clip MP4 por escena** con las herramientas
+  existentes (`?escena=N` sobre una sola pieza HTML): los planos a cámara salen como clips
+  negros con su duración exacta y el montaje se hace en Final Cut sustituyéndolos por el
+  rodaje. Credenciales de la cuenta demo en `.env` de la raíz, fuera de git. Probado de punta
+  a punta con login simulado y export real por escena; falta el piloto contra la app
+  corriendo (`formelia-app` en el puerto 3020).
+
+- **2026-08-16** — **Dos guiones de reel aprobados y con brief de producción** para
+  `@joinformelia` (pilar educación operativa, réplica en TikTok):
+  [imposible desde el teléfono](../02-marketing/redes/instagram/2026-08-16-reel-imposible-desde-el-telefono/brief.md)
+  (43 s, el orden de los campos espanta a quien responde) y
+  [la pregunta cara](../02-marketing/redes/instagram/2026-08-16-reel-pregunta-cara/brief.md)
+  (45 s, la pregunta de texto libre que cuesta respuestas). Cada brief lleva guion literal,
+  tabla de producción escena a escena, ganchos alternativos y auditoría. Ajuste de honestidad
+  hecho en sesión: la moraleja de "la pregunta cara" no promete señalado automático — muestra
+  el modal de conversión por pregunta y el cambio de campo pidiéndoselo a la IA, que es lo que
+  el producto hace hoy.
+
+- **2026-08-14** — **La landing, commiteada y reescrita para convertir** (rama
+  `feat/marketing-home-conversion` en `formelia-app`, siete commits, sin pushear). El rediseño
+  que llevaba semanas sin commitear ya está en git, y encima se le aplicó una auditoría de
+  conversión completa. Lo que cambia de fondo: **el headline invierte el orden**
+  ([decisión](decisiones/2026-08-14-headline-promesa.md)); se añaden **reductores de riesgo**
+  bajo los CTAs ("sin tarjeta · gratis para siempre · tus datos no entrenan modelos"), una
+  **sección de dolor**, una **banda de prueba** con tres cifras verificables del producto
+  (11 eventos por sesión, 13 análisis, 0 de contenido usado para entrenar), un bloque de
+  **objeciones** y una **comparativa de flujo de trabajo** frente a "un formulario y una hoja de
+  cálculo". El análisis sube del 85% al 51% de scroll.
+  **Dos correcciones de honestidad que conviene conocer:** el copy prometía una IA a la que
+  preguntarle lo que quisieras — no existe, son 13 análisis de catálogo — y dos maquetas
+  dibujaban esa conversación; y la personalización se vendía como "paleta completa" cuando son
+  18 acentos y 12 tipografías sin campo hexadecimal. Ambas corregidas en producto y en
+  `marca/voz-y-tono.md`.
+  **Pendiente antes del 15-ago:** revisar bios de redes y el teaser sembrado, que siguen el
+  orden viejo del headline. Y quedan dos tareas abiertas en la landing: publicar un formulario
+  real de demo (la constante `DEMO_FORM_SLUG` ya está lista para apuntarle) y convertir el hero
+  en un campo de prompt real que arrastre el texto al alta.
 
 - **2026-08-12** — **Motion de identidad**
   ([spec](../01-diseno/assets/plantillas/motion-identidad/motion-identidad.md)): pieza de
