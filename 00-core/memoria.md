@@ -5,8 +5,9 @@
 
 ## Estado actual (2026-08-04)
 
-- **Fase:** pre-lanzamiento. Lanzamiento público **FIJO 15-ago-2026** (en 11 días) — decisión
-  del founder: se lanza con lo que haya.
+- **Fase:** pre-lanzamiento. Lanzamiento público **24-ago-2026** — movido desde el 15-ago
+  ([decisión](decisiones/2026-08-18-lanzamiento-24-ago.md)); la fecha original pasó con la
+  landing y las piezas de video aún a medias.
 - **Producto en soft launch:** cualquiera puede registrarse; sin anuncio. Audiencia: cero.
 - **Estrategia H2 definida** (decisión
   [2026-08-04](decisiones/2026-08-04-estrategia-h2-2026.md)): 70% distribución / 30%
@@ -24,12 +25,13 @@
    forzar mitigaciones pre-lanzamiento; la fecha no se mueve).
 2. Pre-lanzamiento (04–14): UTM/atribución, `llms.txt`, 12 plantillas-landing, comunidades
    MX/CO en modo aporte, teaser en redes (calendario sembrado).
-3. **Lanzar el 15-ago** en todas las superficies + comunidades.
+3. **Lanzar el 24-ago** en todas las superficies + comunidades (era el 15-ago).
 4. Post (16–31): `/blog` + 4 artículos, semanas temáticas por avatar, outreach consultoras,
    fricción de onboarding con feedback real.
 
 ## Decisiones recientes
 
+- [2026-08-18 — El lanzamiento público se mueve al 24-ago-2026](decisiones/2026-08-18-lanzamiento-24-ago.md)
 - [2026-08-14 — El headline público abre con la promesa, no con el mecanismo](decisiones/2026-08-14-headline-promesa.md)
 - [2026-08-04 — Estrategia operativa H2-2026 (avatares, canales, blog, recursos)](decisiones/2026-08-04-estrategia-h2-2026.md)
 - [2026-08-04 — Reestructuración de áreas y reinicio de marketing](decisiones/2026-08-04-reestructuracion-areas.md)

@@ -18,3 +18,4 @@ Registro inmutable de decisiones estratégicas. Una decisión por archivo, nombr
 | Fecha | Decisión | Estado |
 | --- | --- | --- |
 | 2026-08-14 | [El headline público abre con la promesa, no con el mecanismo](2026-08-14-headline-promesa.md) | Vigente |
+| 2026-08-18 | [El lanzamiento público se mueve al 24-ago-2026](2026-08-18-lanzamiento-24-ago.md) | Vigente |

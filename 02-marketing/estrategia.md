@@ -1,6 +1,6 @@
 # Estrategia de marketing
 
-> Documento vivo del equipo de Marketing. Última actualización: 2026-08-08 (v2)
+> Documento vivo del equipo de Marketing. Última actualización: 2026-08-18
 > Definida en sesión de estrategia con el founder — decisión:
 > [estrategia H2-2026](../00-core/decisiones/2026-08-04-estrategia-h2-2026.md).
 > Se subordina a [`00-core/posicionamiento.md`](../00-core/posicionamiento.md); los canales y
@@ -161,12 +161,16 @@ Anti-pitch: jamás "Typeform con IA"; jamás features del roadmap como existente
 
 ## Campaña activa
 
-**Lanzamiento 15-ago-2026:** teaser (6–14 ago, build in public del founder + primeras demos)
-→ lanzamiento (15–22 ago, pieza fuerte en todas las superficies + comunidades) →
-consolidación (hasta 30-sep, semanas temáticas por avatar). Brief en [campanas/](campanas/README.md).
+**Lanzamiento 24-ago-2026** (movido desde el 15-ago,
+[decisión](../00-core/decisiones/2026-08-18-lanzamiento-24-ago.md)): teaser (6–14 ago, build
+in public del founder + primeras demos) → lanzamiento (24–31 ago, pieza fuerte en todas las
+superficies + comunidades) → consolidación (hasta 30-sep, semanas temáticas por avatar).
+Brief en [campanas/](campanas/README.md).
 
 ## Historial de cambios
 
+- 2026-08-18 — Ventana de lanzamiento movida al 24–31 ago
+  ([decisión](../00-core/decisiones/2026-08-18-lanzamiento-24-ago.md)).
 - 2026-08-08 — **Amplio primero, acotar con datos**
   ([decisión](../00-core/decisiones/2026-08-08-avatares-amplio-primero.md)): los avatares
   pasan a ser escenarios de ejemplo, no filtros de audiencia. Cambian el objetivo del área, el

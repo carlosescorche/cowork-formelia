@@ -1,6 +1,6 @@
 # Estrategia de growth (distribución)
 
-> Documento vivo del equipo de Growth. Última actualización: 2026-08-04
+> Documento vivo del equipo de Growth. Última actualización: 2026-08-18
 > Fuente: [`docs/vision/07-plan-transformacion-10x.md`](../../formelia-app/docs/vision/07-plan-transformacion-10x.md) §3
 > **Este es el trabajo #1 de la empresa post-lanzamiento.** Distribución es el riesgo #1: 0
 > usuarios, 0 canal probado.
@@ -8,7 +8,9 @@
 ## Estado y foco (2026-08-04)
 
 - **Soft launch abierto** (cualquiera puede registrarse) sin anuncio. Lanzamiento público
-  **fijo el 15-ago**. Audiencia previa: cero. Founder: ~10h/sem para distribución.
+  el **24-ago** (movido desde el 15-ago,
+  [decisión](../00-core/decisiones/2026-08-18-lanzamiento-24-ago.md)). Audiencia previa:
+  cero. Founder: ~10h/sem para distribución.
 - **País foco:** México + Colombia (comunidades, keywords, horarios, ejemplos).
 - **Avatares:** 4 en test con corte a 2 el 30-sep — [`02-marketing/avatares.md`](../02-marketing/avatares.md);
   growth mide su atribución. Decisión:
@@ -55,7 +57,7 @@ Descubrimiento → Visita landing → Registro → Crea form → Publica → Rec
                                      ↓ ≥45% en 7 días (activación)          → Convierte a pago
 ```
 
-- Fuente de signup instrumentada (UTM + referrer) — verificar antes del 15-ago. Stack
+- Fuente de signup instrumentada (UTM + referrer) — verificar antes del 24-ago. Stack
   decidido en [ADR-001](../05-arquitectura/specs/adr-001-stack-analitica.md): PostHog EU
   (web + producto) + atribución first-party en Supabase; Metricool mide las redes.
 - Dashboard de métricas norte: FAS, activación, T2F, share IA, conversión — se calculan desde
@@ -69,7 +71,7 @@ Descubrimiento → Visita landing → Registro → Crea form → Publica → Rec
 2. [ ] `llms.txt` + contenido agent-readable en el sitio (06–08 ago).
 3. [ ] **Comunidades MX/CO:** identificar 5 (grupos de FB/WhatsApp/Slack de emprendedores,
    consultores, psicólogos, coordinadores académicos) y empezar a aportar valor YA (desde
-   04-ago, 30 min/día) — se pide/anuncia recién el 15-ago. Medir con UTM por comunidad.
+   04-ago, 30 min/día) — se pide/anuncia recién el 24-ago. Medir con UTM por comunidad.
 4. [ ] Onda 1 de plantillas-landing: 12 pre-lanzamiento (3 por avatar) → 30+ a fin de sep.
 5. [ ] Sembrar Formelia en 10+ directorios de herramientas que los LLMs citan (ago).
 6. [ ] **Outreach artesanal LinkedIn:** 10 contactos/sem del avatar en rotación (desde
@@ -91,6 +93,9 @@ Descubrimiento → Visita landing → Registro → Crea form → Publica → Rec
 
 ## Historial de cambios
 
+- 2026-08-18 — Fecha de lanzamiento movida al 24-ago
+  ([decisión](../00-core/decisiones/2026-08-18-lanzamiento-24-ago.md)); plazos ligados a
+  ella desplazados.
 - 2026-08-04 — Estado y foco actualizados (soft launch, MX+CO, avatares con corte);
   comunidades y outreach entran a prioridades con fechas.
 - 2026-07-30 — Versión inicial.

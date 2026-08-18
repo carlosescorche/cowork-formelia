@@ -36,7 +36,7 @@ obliga a advertirlo: hazlo, y traduce en vez de copiar.
   las cuentas personales del founder van en primera persona. Las cinco variables de personaje
   (físico, habla, vestimenta, escenario, temática) se aplican al founder a cámara.
 - **El protocolo que aplica es el de cuenta nueva, no el de rescate.** Partimos de audiencia
-  cero con lanzamiento el 15-ago-2026. Usa el arranque con seguidores cualificados, no el
+  cero con lanzamiento el 24-ago-2026. Usa el arranque con seguidores cualificados, no el
   árbol de decisión de cuenta intoxicada, salvo que los datos digan otra cosa.
 - **Ticket bajo, volumen alto.** El embudo no es A→C→V hacia una llamada de venta: es alcance
   → landing → signup → primer formulario publicado. La métrica norte de la empresa es el

@@ -25,4 +25,4 @@ assets/
 
 - [ ] Exportar set completo de logos desde el componente React.
 - [ ] Crear las 5 plantillas maestras definidas en la estrategia de marca.
-- [ ] Set de screenshots oficiales del producto para el lanzamiento (15-ago-2026).
+- [ ] Set de screenshots oficiales del producto para el lanzamiento (24-ago-2026).

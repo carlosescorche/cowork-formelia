@@ -61,7 +61,9 @@ el producto vive en `../formelia-app`.
 - Personas: **Carolina** (coordinadora/dueña operativa, primaria), **el consultor multiplicador**
   (secundaria), el respondedor móvil/WhatsApp-first (terciaria).
 - Métrica norte: **FAS** — Formularios Activos por Semana (publicados con ≥5 respuestas/semana).
-- Lanzamiento público objetivo: **15-ago-2026**. Riesgo #1 declarado: **distribución**.
+- Lanzamiento público objetivo: **24-ago-2026** (movido desde el 15-ago,
+  [decisión](00-core/decisiones/2026-08-18-lanzamiento-24-ago.md)). Riesgo #1 declarado:
+  **distribución**.
 - Dominio: **formelia.io** (no .com). Buzones legales: `legal@formelia.io`, `privacy@formelia.io`.
 - Handles: marca **@joinformelia** (IG, TikTok, LinkedIn — @formelia estaba ocupado) ·
   founder **@caescorche** (LinkedIn, X, IG personales). En X no hay cuenta de marca.
