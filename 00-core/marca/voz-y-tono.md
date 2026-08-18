@@ -1,6 +1,6 @@
 # Voz y tono
 
-> Última actualización: 2026-08-08
+> Última actualización: 2026-08-14
 
 ## La voz de Formelia
 
@@ -36,11 +36,16 @@ hype-bro de IA. **Cercana, directa, honesta.**
 
 ## Frases canónicas (usar tal cual)
 
-- **"Describe tu formulario y la IA lo crea."** (headline canónico — decisión 2026-08-06)
-- **"Formularios que la gente sí termina."** (línea de apoyo: subtítulo en landing, segunda
-  línea de bio, cierre de posts — ya no abre en frío)
+- **"Formularios que la gente sí termina."** (headline canónico — decisión
+  [2026-08-14](../decisiones/2026-08-14-headline-promesa.md), invierte el orden fijado el
+  2026-08-06)
+- **"Descríbelo con tus palabras y la IA lo crea."** (línea de apoyo: subtítulo en landing,
+  segunda línea de bio, cierre de posts)
 - "Descríbelo con tus palabras y deja que la IA arme el primer borrador."
-- "El formulario se ve tuyo, no de la herramienta con la que lo hiciste."
+- "Quien lo abre ve tu marca, no un formulario cualquiera." *(retirada el 2026-08-14: "El
+  formulario se ve tuyo, no de la herramienta con la que lo hiciste" — con 18 acentos y 12
+  tipografías predefinidas, y sin campo hexadecimal, no podemos prometer que se vea igual que
+  la marca del cliente. La percepción sí la sostenemos; la equivalencia exacta no)*
 - "Analítica que sí se entiende."
 - "Ninguna respuesta se pierde."
 - "De cien respuestas a una decisión."

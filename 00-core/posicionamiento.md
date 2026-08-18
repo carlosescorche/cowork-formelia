@@ -1,6 +1,6 @@
 # Posicionamiento y mensajes
 
-> Última actualización: 2026-08-06 · Fuentes:
+> Última actualización: 2026-08-14 · Fuentes:
 > [`docs/vision/05-nicho-y-pmf.md`](../../formelia-app/docs/vision/05-nicho-y-pmf.md),
 > [`docs/vision/06-diferenciacion-y-pivotes.md`](../../formelia-app/docs/vision/06-diferenciacion-y-pivotes.md)
 
@@ -9,10 +9,12 @@
 **Formelia es el creador de formularios AI-first del mundo hispanohablante: descríbelo con tus
 palabras, publícalo con tu marca y entiende cada respuesta sin exportar nada.**
 
-Headline público canónico: **"Describe tu formulario y la IA lo crea."**
-Línea de apoyo: *"Formularios que la gente sí termina"* — la promesa ya no abre en frío
-(exige un contexto que una audiencia de cero no tiene); acompaña como subtítulo en landing,
-segunda línea de bio y cierre de posts.
+Headline público canónico: **"Formularios que la gente sí termina."**
+Línea de apoyo: *"Descríbelo con tus palabras y la IA lo crea"* — el mecanismo explica cómo se
+cumple la promesa; acompaña como subtítulo en landing, segunda línea de bio y cierre de posts.
+El orden se invirtió el 2026-08-14
+([decisión](decisiones/2026-08-14-headline-promesa.md)): generar con IA lo ofrece hoy toda la
+categoría, y la landing ya construye por sí sola el contexto que en agosto no existía.
 
 ## A quién le hablamos (beachhead)
 
@@ -95,3 +97,7 @@ progreso guardado, cero fricción. Es la razón de la promesa "la gente sí term
 - Español nativo de verdad: producto, plantillas, soporte y legales escritos primero en español.
 
 ## Historial de cambios
+
+- **2026-08-14** — Headline canónico y línea de apoyo intercambiados: abre la promesa
+  ("Formularios que la gente sí termina") y el mecanismo pasa a subtítulo
+  ([decisión](decisiones/2026-08-14-headline-promesa.md)).

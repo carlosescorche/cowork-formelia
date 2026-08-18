@@ -46,9 +46,11 @@ el producto vive en `../formelia-app`.
   ("gratis", "sin tarjeta") solo donde tocan (pricing/onboarding), nunca como coletilla
   comercial en bios/posts/headlines — nada estilo teletienda. Nunca "en español" en textos
   ya escritos en español (redundante).
-- Headline canónico: **"Describe tu formulario y la IA lo crea."** Línea de apoyo:
-  "Formularios que la gente sí termina" (subtítulo en landing, segunda línea de bio, cierre
-  de posts) — la promesa ya no abre en frío.
+- Headline canónico: **"Formularios que la gente sí termina."** Línea de apoyo: "Descríbelo con
+  tus palabras y la IA lo crea" (subtítulo en landing, segunda línea de bio, cierre de posts).
+  El orden se invirtió el 2026-08-14
+  ([decisión](00-core/decisiones/2026-08-14-headline-promesa.md)); si encuentras el orden
+  contrario en una pieza, está desactualizada.
 
 ## Datos fijos del negocio (para no re-buscar)
 

@@ -23,9 +23,9 @@ Tres atributos, en orden:
 
 ## Principios de diseño
 
-1. **El protagonista es el formulario del cliente, no Formelia.** "El formulario se ve tuyo, no
-   de la herramienta con la que lo hiciste." En piezas de marketing: mostrar la marca del
-   cliente brillando, la nuestra acompañando.
+1. **El protagonista es el formulario del cliente, no Formelia.** "Quien lo abre ve tu marca, no
+   un formulario cualquiera." En piezas de marketing: mostrar la marca del cliente brillando, la
+   nuestra acompañando.
 2. **Teal como único acento de acción.** Éxito también es teal (no verde). El violeta solo existe
    como decorativo marginal, jamás asociado a IA.
 3. **La IA no se disfraza de magia.** Sin sparkles, sin degradados morados, sin emoji de destello. La IA en
