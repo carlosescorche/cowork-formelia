@@ -13,6 +13,7 @@ PATH y Google Chrome.
 | --- | --- |
 | [`empaquetar.py`](empaquetar.py) | Convierte una pieza de varios archivos en un HTML autocontenido |
 | [`exportar-video.py`](exportar-video.py) | Graba una pieza animada a MP4, fotograma a fotograma |
+| [`capturar-ui.py`](capturar-ui.py) | Captura pantallas reales de la app siguiendo un plan JSON |
 
 ## empaquetar.py
 
@@ -107,6 +108,23 @@ Una pieza construida sobre un único reloj CSS cumple todo esto de serie.
 - **Python del sistema no trae cliente WebSocket.** En vez de instalar dependencias en la
   máquina del founder, el script lleva dentro el mínimo imprescindible (handshake y
   tramas). Son unas ochenta líneas y no se tocan.
+
+## capturar-ui.py
+
+Abre Chrome por CDP, ejecuta un plan JSON de pasos (navegar, esperar, escribir, clic,
+capturar) y deja las capturas PNG en disco. Es la fuente de "UI siempre real" de las piezas
+de video: cuando la UI cambia, se reejecuta el plan y las capturas se regeneran con el
+mismo encuadre.
+
+```bash
+python3 capturar-ui.py plan-captura.json --salida capturas/
+```
+
+Las credenciales nunca van en el plan: el plan usa `${VARIABLES}` y el script las
+sustituye desde el `.env` de la raíz del repo (que está en `.gitignore`). Con `--ver`
+ejecuta con Chrome visible, para depurar un plan que falla. Los verbos y un ejemplo
+completo con login están documentados en el skill `pantallas-reel`
+(`.claude/skills/pantallas-reel/references/plan-captura.md`), que es quien lo usa.
 
 ## Cómo construir una pieza que funcione con esto
 

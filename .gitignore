@@ -1,6 +1,13 @@
 .DS_Store
 *.tmp
 node_modules/
+__pycache__/
+
+# Config local del panel de preview (apunta a rutas de scratchpad por sesión).
+.claude/launch.json
+
+# Credenciales locales (cuenta demo para capturas de UI). Nunca se versionan.
+.env
 
 # Exportables pesados (vídeo, imágenes renderizadas). Ver assets/README.md.
 # La barra inicial ancla a la raíz: 01-diseno/assets/ sí se versiona.
