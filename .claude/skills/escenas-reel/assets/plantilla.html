@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escenas — Previsualización</title>
+<!-- Si la pieza usa Lexend/Geist, enlaza Google Fonts aquí durante el desarrollo.
+     Para exportar, el CSS se extrae a estilos.css con el @import al frente y
+     empaquetar.py lo sustituye por woff2 incrustados. -->
+<style>
+  /* ==== Visor (interfaz de trabajo, no sale en el video) ==== */
+  :root {
+    --bg: #101114; --card: #1a1c20; --line: #2a2d33;
+    --text: #e8e9ea; --muted: #9a9ea6;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; padding: 32px 24px 48px; }
+  header.page { max-width: 1200px; margin: 0 auto 28px; }
+  header.page h1 { font-size: 20px; font-weight: 700; }
+  header.page p { color: var(--muted); font-size: 13px; margin-top: 6px; line-height: 1.5; }
+  .grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+  .card h2 { font-size: 14px; font-weight: 600; }
+  .card .desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+  .stage-wrap { width: 100%; overflow: hidden; border-radius: 10px; background: #000; }
+  .stage {
+    width: 1080px; height: 1920px;           /* SIEMPRE tamaño final real */
+    transform-origin: top left;
+    position: relative; overflow: hidden;
+    background: #ffffff;
+  }
+  .controls { display: flex; gap: 8px; align-items: center; }
+  .controls button {
+    font-family: var(--font); font-size: 12.5px; font-weight: 600;
+    padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line);
+    background: #24262c; color: var(--text); cursor: pointer;
+  }
+  .controls button:hover { background: #2d3037; }
+  .controls .time { margin-left: auto; font-size: 11.5px; color: var(--muted); }
+  .progress { height: 4px; border-radius: 2px; background: #2a2d33; overflow: hidden; }
+  .progress > i { display: block; height: 100%; width: 100%; background: #7d828c; transform: scaleX(0); transform-origin: left; }
+
+  /* ==== Mecanismo de pausa ====
+     Los shorthands "animation:" de las escenas resetean estas longhands: por eso
+     el !important. --ps se escribe en la tarjeta y se hereda. No tocar. */
+  .stage, .stage *, .progress > i {
+    animation-play-state: var(--ps, paused) !important;
+    animation-fill-mode: both !important;
+  }
+  .noanim * { animation: none !important; }
+
+  /* ==== Modo captura (contrato de exportar-video.py) ==== */
+  body.limpio { padding: 0; background: #000; }
+  body.limpio header.page { display: none; }
+  body.limpio .grid { max-width: none; display: block; margin: 0; }
+  body.limpio .card { border: 0; padding: 0; background: none; border-radius: 0; }
+  body.limpio .card h2, body.limpio .card .desc,
+  body.limpio .card .controls, body.limpio .card .progress { display: none; }
+  body.limpio .stage-wrap { width: 1080px; height: 1920px !important; border-radius: 0; }
+  body.limpio .stage { transform: none !important; }
+
+  /* ==== Tipeo por caracteres ====
+     Duración real e interpolada (no 1ms + steps): Chrome puede saltarse el pintado
+     de una animación cuya fase activa cabe entre dos frames. Sin overflow:hidden:
+     movería la línea de base y desalinearía el texto respecto al caret. */
+  .tchar {
+    display: inline-block; white-space: pre;
+    max-width: 0; opacity: 0;
+    animation-name: char-in; animation-duration: 90ms; animation-timing-function: linear;
+  }
+  @keyframes char-in {
+    from { max-width: 0; opacity: 0; }
+    60%  { max-width: 1.2em; opacity: 1; }
+    to   { max-width: 1.2em; opacity: 1; }
+  }
+  /* Caret: el padre decide cuándo aparece; el hijo parpadea libre. Dos animaciones
+     con fill sobre el mismo elemento se pisan — por eso el anidado. */
+  .caret-w { display: inline-block; opacity: 0; animation: fade-in 60ms linear both; }
+  @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+  .caret {
+    display: inline-block; width: 1.5px; height: 1.05em;
+    background: #171717; vertical-align: text-bottom;
+    animation: blink 1.1s steps(2, jump-none) infinite;
+  }
+  @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+
+  /* ==== ESCENA 1 — ejemplo mínimo: sustituir por las escenas reales ====
+     Convención: prefijo por escena en los keyframes (s1-, s2-, ...). Estados que
+     van y vuelven → un solo keyframes con la duración total de la escena y
+     porcentajes; o anidar wrappers (entrada fuera, salida dentro). */
+  .s1 .demo-box {
+    position: absolute; left: 90px; top: 400px; right: 90px;
+    font-size: 48px; color: #171717;
+    opacity: 0;
+    animation: s1-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+  }
+  @keyframes s1-in { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<header class="page">
+  <h1>Escenas — Previsualización</h1>
+  <p>Lienzo 1080 × 1920 (9:16), HTML/CSS/JS puro. Cada escena se reproduce, pausa y
+  reinicia de forma individual.</p>
+</header>
+
+<div class="grid">
+
+  <!-- Una tarjeta por escena. data-dur = duración en segundos; la barra de progreso
+       repite esa duración en su animation-duration inline. -->
+  <section class="card" data-dur="5">
+    <h2>Escena 1 — Ejemplo</h2>
+    <p class="desc">Sustituir por la primera escena del brief. 5 s.</p>
+    <div class="stage-wrap">
+      <div class="stage s1">
+        <div class="demo-box">
+          <span class="typed" data-text="Texto que se escribe solo" data-start="1200" data-speed="45"></span><span class="caret-w"><span class="caret"></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="progress"><i style="animation-duration: 5s"></i></div>
+    <div class="controls">
+      <button data-act="play">Reproducir</button>
+      <button data-act="pause">Pausar</button>
+      <button data-act="restart">Reiniciar</button>
+      <span class="time">5 s</span>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---- Montaje de contenido (antes del modo captura y de fit()) ----
+
+  // Tipeo: un span por carácter con delay inline. data-start (ms) + data-speed (ms/car).
+  document.querySelectorAll(".typed").forEach(function (el) {
+    var start = parseInt(el.dataset.start, 10);
+    var speed = parseInt(el.dataset.speed, 10);
+    el.dataset.text.split("").forEach(function (ch, i) {
+      var sp = document.createElement("span");
+      sp.className = "tchar";
+      sp.textContent = ch;
+      sp.style.animationDelay = (start + i * speed) + "ms";
+      el.appendChild(sp);
+    });
+  });
+
+  // ---- Modo captura: contrato de exportar-video.py ----
+  // ?limpio=1&zoom=1&escena=N&t=0 → solo esa escena, a tamaño real, congelada en t.
+  var q = new URLSearchParams(location.search);
+  var capturaEscena = q.get("limpio") === "1" && q.get("escena");
+  if (capturaEscena) {
+    document.body.classList.add("limpio");
+    var stageCap = document.querySelector(".stage.s" + capturaEscena);
+    var cardCap = stageCap.closest(".card");
+    document.querySelectorAll(".card").forEach(function (c) {
+      if (c !== cardCap) c.remove();
+    });
+    window.DURACION_MS = Number(cardCap.dataset.dur) * 1000;
+    var animsCap = null;
+    window.congelar = function (ms) {
+      if (!animsCap) animsCap = stageCap.getAnimations({ subtree: true });
+      animsCap.forEach(function (a) { a.pause(); a.currentTime = ms; });
+    };
+  }
+
+  // ---- Escalado responsivo del lienzo ----
+  function fit() {
+    document.querySelectorAll(".stage-wrap").forEach(function (wrap) {
+      var stage = wrap.querySelector(".stage");
+      if (document.body.classList.contains("limpio")) {
+        stage.style.transform = "none";
+        wrap.style.height = "1920px";
+        return;
+      }
+      var scale = wrap.clientWidth / 1080;
+      stage.style.transform = "scale(" + scale + ")";
+      wrap.style.height = 1920 * scale + "px";
+    });
+  }
+  fit();
+  window.addEventListener("resize", function () { fit(); });
+
+  // En captura: congelar en t y avisar cuando las fuentes estén listas.
+  if (capturaEscena) {
+    document.fonts.ready.then(function () {
+      requestAnimationFrame(function () {
+        window.congelar(Number(q.get("t") || 0));
+        document.body.dataset.listo = "1";
+      });
+    });
+  }
+
+  // ---- Controles por escena ----
+  document.querySelectorAll(".card").forEach(function (card) {
+    var stage = card.querySelector(".stage");
+    var progress = card.querySelector(".progress > i");
+
+    function setState(state) {
+      card.style.setProperty("--ps", state);
+      // Sin recálculo forzado, Chrome aplica el cambio de --ps tarde y por
+      // elemento, desincronizando los delays largos (el tipeo es lo primero
+      // que se rompe). No quitar estas dos líneas.
+      void card.offsetWidth;
+      card.getAnimations({ subtree: true });
+    }
+
+    card.querySelectorAll(".controls button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var act = btn.dataset.act;
+        if (act === "play") {
+          setState("running");
+        } else if (act === "pause") {
+          setState("paused");
+        } else if (act === "restart") {
+          stage.classList.add("noanim");
+          progress.style.animationName = "none";
+          void stage.offsetWidth; // reflow: destruye y recrea las animaciones
+          stage.classList.remove("noanim");
+          progress.style.animationName = "";
+          setState("running");
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
