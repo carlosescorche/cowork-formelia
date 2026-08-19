@@ -17,8 +17,7 @@ esta carpeta.**
 | [marca/](marca/) | Identidad de marca: estrategia, identidad visual, voz y tono | Ante cambios de identidad |
 | [operaciones/](operaciones/) | Legal y finanzas: bloqueantes de lanzamiento, economía de IA, cierres | Mensual (legal: continuo) |
 
-*(Marca y operaciones son parte de core desde la
-[reestructuración del 2026-08-04](decisiones/2026-08-04-reestructuracion-areas.md): definen
+*(Marca y operaciones son parte de core desde la reestructuración del 2026-08-04: definen
 reglas y compliance transversales, no son equipos de ejecución.)*
 
 ## Cómo se usa

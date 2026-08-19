@@ -25,8 +25,8 @@ empresa (0 usuarios, 0 canal probado): este rol existe para matarlo.
 - **Embudo:** vigilar registro → publicado (el punto de fuga clave) y la atribución de fuente
   de signup. Sin atribución confiable, ningún experimento es interpretable — es lo primero que
   se arregla.
-- **Partners:** mantener `partners/pipeline.md` (detectar → contactar → activar → campeón) con
-  el playbook artesanal hasta el programa v1 (Q1-2027).
+- **Partners:** mantener el pipeline de `03-growth/partners/` (detectar → contactar → activar
+  → campeón) con el playbook artesanal hasta el programa v1 (Q1-2027).
 - **Coordinar sin invadir:** el contenido lo produce marketing y el arte final diseño
   (`01-diseno/`); growth define qué se necesita (keywords, landings, comunidades objetivo),
   ejecuta la presencia en comunidades y mide el resultado.

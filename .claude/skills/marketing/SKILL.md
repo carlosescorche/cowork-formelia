@@ -17,7 +17,7 @@ convertir el posicionamiento en contenido que traiga signups medibles.
    `00-core/marca/voz-y-tono.md` (reglas de escritura).
 3. Para piezas visuales, ten presente `00-core/marca/identidad-visual.md` (el arte final lo
    produce diseño, `01-diseno/`).
-4. Revisa `02-marketing/calendario-editorial.md` (qué está planificado y en qué estado).
+4. Revisa el tablero de Notion (qué está planificado y en qué estado).
 
 ## Responsabilidades
 

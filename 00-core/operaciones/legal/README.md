@@ -31,8 +31,7 @@ los 7, actualizar [`00-core/memoria.md`](../../memoria.md).
 
 ## Vigilancia continua
 
-- **PostHog (analítica) añadido como subencargado el 2026-08-04**
-  ([ADR-001](../../../05-arquitectura/specs/adr-001-stack-analitica.md)) — incluirlo en la
+- **PostHog (analítica) añadido como subencargado el 2026-08-04** — incluirlo en la
   política de privacidad y su DPA al cerrar los ítems 4–5, antes del lanzamiento (24-ago).
 - AI Act: obligaciones aplicables a superficies conversacionales y disclosure.
 - **Contenido sintético en redes (desde 2026-08-04):** las piezas con imagen/video generado

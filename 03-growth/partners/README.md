@@ -5,20 +5,11 @@ clientes (10–30 forms activos cada uno) y es distribución encubierta vía el 
 formal de partners llega en Q1-2027; **hasta entonces, esta carpeta gestiona la relación
 artesanal con los primeros**.
 
-## Estructura
-
-```
-partners/
-├── pipeline.md        Lista viva: candidato, país, tipo (freelance/agencia), nº de clientes,
-│                      estado (detectado → contactado → activo → campeón), notas
-└── programa-v1.md     (Q1-2027) Diseño del programa: directorio, descuentos por volumen,
-                       co-marketing
-```
-
 ## Playbook artesanal (2026)
 
 1. **Detectar:** usuarios con muchos formularios en workspaces distintos, respuestas a los
-   posts de LinkedIn, comunidades. Anotar en `pipeline.md`.
+   posts de LinkedIn, comunidades. Anotar aquí cada candidato: país, tipo (freelance o
+   agencia), nº de clientes, estado (detectado → contactado → activo → campeón) y notas.
 2. **Cuidar a mano:** onboarding personal por videollamada, canal directo con el founder,
    escucharles el flujo real (→ entrevista de research).
 3. **Convertir en campeones:** caso de estudio con su marca, mención en redes, acceso temprano

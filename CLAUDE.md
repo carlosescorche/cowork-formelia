@@ -4,8 +4,7 @@ Este repo es el entorno de gestión de Formelia como empresa. No contiene códig
 el producto vive en `../formelia-app`.
 
 Áreas (desde la reestructuración del 2026-08-04): `00-core/` (dirección — incluye `marca/` y
-`operaciones/`), `01-diseno/`, `02-marketing/`, `03-growth/`, `04-producto/`,
-`05-arquitectura/`.
+`operaciones/`), `01-diseno/`, `02-marketing/`, `03-growth/`.
 
 ## Reglas de trabajo
 
@@ -67,5 +66,11 @@ el producto vive en `../formelia-app`.
 - Dominio: **formelia.io** (no .com). Buzones legales: `legal@formelia.io`, `privacy@formelia.io`.
 - Handles: marca **@joinformelia** (IG, TikTok, LinkedIn — @formelia estaba ocupado) ·
   founder **@caescorche** (LinkedIn, X, IG personales). En X no hay cuenta de marca.
+- **Las cuentas personales del founder no son una superficie de Formelia** desde el 2026-08-19
+  ([decisión](00-core/decisiones/2026-08-19-marca-personal-segundo-negocio.md)): son su
+  segundo negocio, gobernado en `../cowork-personal/`. Formelia tiene prioridad absoluta sobre
+  el lote de grabación; el techo personal es de 2 piezas de video/sem y marketing no programa
+  esas cuentas. Al escribir para ellas, respeta los números partidos (Formelia: dinero no;
+  marca personal: dinero sí) y la regla de "nunca plan B".
 - Anti-pitch: nunca decir "Typeform con IA", "vamos por todo el mercado global", ni vender TAMs
   sin camino. Anti-posicionamiento: no somos research, no somos chatbot, no somos no-code amplio.

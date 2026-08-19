@@ -41,7 +41,7 @@ eventos — no son el filtro de a quién le hablamos: son la fuente del ejemplo 
 segmentación real vive en plantillas, artículos y contacto directo, cada uno con su UTM.
 Primer acotamiento formal: 30-sep-2026. País foco inicial: México + Colombia. Ver
 [`02-marketing/avatares.md`](../02-marketing/avatares.md) y la
-[decisión](decisiones/2026-08-08-avatares-amplio-primero.md).
+decisión.
 
 ## Mensajes por persona
 

@@ -28,9 +28,9 @@ El método genérico está calibrado para infoproductos de deseo primario, ticke
 euros y marca personal. Formelia es SaaS de $10-25/mes con audiencia cero. El propio skill
 obliga a advertirlo: hazlo, y traduce en vez de copiar.
 
-- **El posicionamiento ya está resuelto.** No redefinas el sector ni el UMV: la decisión
-  [amplio primero, acotar con datos](../../../00-core/decisiones/2026-08-08-avatares-amplio-primero.md)
-  ya fija que hablamos a cualquier negocio que le pide información a alguien, y que el avatar
+- **El posicionamiento ya está resuelto.** No redefinas el sector ni el UMV: la decisión de
+  amplio primero, acotar con datos (2026-08-08) ya fija que hablamos a cualquier negocio que
+  le pide información a alguien, y que el avatar
   pone el ejemplo, no el límite. Es exactamente el "subir por encima del nicho" del método.
 - **Hay dos personajes, no uno.** `@joinformelia` es colega que enseña y nunca habla en "yo";
   las cuentas personales del founder van en primera persona. Las cinco variables de personaje

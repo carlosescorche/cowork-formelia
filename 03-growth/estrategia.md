@@ -13,8 +13,7 @@
   cero. Founder: ~10h/sem para distribución.
 - **País foco:** México + Colombia (comunidades, keywords, horarios, ejemplos).
 - **Avatares:** 4 en test con corte a 2 el 30-sep — [`02-marketing/avatares.md`](../02-marketing/avatares.md);
-  growth mide su atribución. Decisión:
-  [estrategia H2-2026](../00-core/decisiones/2026-08-04-estrategia-h2-2026.md).
+  growth mide su atribución. Decisión: estrategia H2-2026 (2026-08-04).
 
 ## Objetivo del área
 
@@ -58,8 +57,8 @@ Descubrimiento → Visita landing → Registro → Crea form → Publica → Rec
 ```
 
 - Fuente de signup instrumentada (UTM + referrer) — verificar antes del 24-ago. Stack
-  decidido en [ADR-001](../05-arquitectura/specs/adr-001-stack-analitica.md): PostHog EU
-  (web + producto) + atribución first-party en Supabase; Metricool mide las redes.
+  decidido: PostHog EU (web + producto) + atribución first-party en Supabase; Metricool mide
+  las redes.
 - Dashboard de métricas norte: FAS, activación, T2F, share IA, conversión — se calculan desde
   Supabase (fuente de verdad); revisión semanal (viernes) con informe generado por Claude.
 - El punto de fuga que más importa al inicio: registro → primer form **publicado**.

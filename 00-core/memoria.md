@@ -3,17 +3,21 @@
 > Este es el primer archivo que se lee al retomar el trabajo. Se actualiza al cierre de cada
 > sesión significativa: estado, foco y movimientos recientes, siempre con fecha.
 
-## Estado actual (2026-08-04)
+## Estado actual (2026-08-19)
 
 - **Fase:** pre-lanzamiento. Lanzamiento público **24-ago-2026** — movido desde el 15-ago
   ([decisión](decisiones/2026-08-18-lanzamiento-24-ago.md)); la fecha original pasó con la
   landing y las piezas de video aún a medias.
 - **Producto en soft launch:** cualquiera puede registrarse; sin anuncio. Audiencia: cero.
-- **Estrategia H2 definida** (decisión
-  [2026-08-04](decisiones/2026-08-04-estrategia-h2-2026.md)): 70% distribución / 30%
+- **Estrategia H2 definida** (decisión del 2026-08-04): 70% distribución / 30%
   producto · 4 avatares con corte a 2 el 30-sep · foco México+Colombia · IG/TikTok/LinkedIn/X
   (personal + marca) · blog propio en formelia.io · Claude produce, founder aprueba todo.
 - **Riesgo #1:** distribución — 0 usuarios, 0 canal probado.
+- **La marca personal del founder es un segundo negocio suyo** desde el 2026-08-19
+  ([decisión](decisiones/2026-08-19-marca-personal-segundo-negocio.md)). Formelia conserva
+  prioridad absoluta sobre el lote de grabación y sigue sirviéndose del pilar de build in
+  public, pero ya no programa esas cuentas: techo de 2 piezas de video/sem, agenda gobernada
+  en `../cowork-personal/`. Nada de ese segundo negocio se ejecuta antes del 1-sep.
 - **Bloqueantes del gate de julio SIN AUDITAR** (estado desconocido al 04-ago; el founder
   no lo tiene presente — detalle en [`operaciones/legal/`](operaciones/legal/README.md)):
   cierre legal (límite era 31-jul), economía de tokens, matriz `LimitDialog`, disclosure AI
@@ -31,14 +35,26 @@
 
 ## Decisiones recientes
 
+- [2026-08-19 — La marca personal del founder pasa a ser un segundo negocio](decisiones/2026-08-19-marca-personal-segundo-negocio.md)
 - [2026-08-18 — El lanzamiento público se mueve al 24-ago-2026](decisiones/2026-08-18-lanzamiento-24-ago.md)
 - [2026-08-14 — El headline público abre con la promesa, no con el mecanismo](decisiones/2026-08-14-headline-promesa.md)
-- [2026-08-04 — Estrategia operativa H2-2026 (avatares, canales, blog, recursos)](decisiones/2026-08-04-estrategia-h2-2026.md)
-- [2026-08-04 — Reestructuración de áreas y reinicio de marketing](decisiones/2026-08-04-reestructuracion-areas.md)
-- [2026-07-30 — Creación del entorno de gestión (este repo)](decisiones/2026-07-30-creacion-entorno-gestion.md)
 
 ## Últimos movimientos
 
+- **2026-08-19** — **La marca personal del founder pasa a ser un segundo negocio**
+  ([decisión](decisiones/2026-08-19-marca-personal-segundo-negocio.md)). El founder quiere una
+  segunda fuente de ingreso a largo plazo (newsletter e infoproductos para makers) con Formelia
+  como prueba de credibilidad, y no quiere que sus cuentas se lean como canal exclusivo de la
+  empresa. Restricciones que puso: máximo 2 piezas de video por semana en lo personal,
+  prioridad siempre para Formelia, registro personal natural y poco producido.
+  Actualizados aquí: [`02-marketing/estrategia.md`](../02-marketing/estrategia.md) (frontera
+  reescrita, pilar 3 con techo, superficies personales) y
+  [`00-core/marca/voz-y-tono.md`](marca/voz-y-tono.md) (voz por cuenta, números partidos,
+  regla de "nunca plan B"). El plan completo del segundo negocio vive en
+  `../cowork-personal/04-negocio/`.
+  **Lo que marketing ya no puede asumir:** que las cuentas personales publiquen lo que
+  convenga a una campaña. **Lo que sí:** el pilar de build in public, la voz de founder en
+  historias, y el arrastre de tráfico cualificado del contenido de makers.
 - **2026-08-17** — **Escenas animadas del reel «La pregunta cara» exportadas**
   (`assets/2026-08/reel-pregunta-cara-escenas/`): tres MP4 1080×1920 a 30 fps para los
   bloques 22-29 y 34-42 del [brief](../02-marketing/redes/instagram/2026-08-16-reel-pregunta-cara/brief.md),
@@ -128,8 +144,7 @@
   en Claude Design: el repo manda, Claude Design ejecuta. Discrepancia detectada y pendiente:
   teal-500 figura como `#159999` en [`marca/identidad-visual.md`](marca/identidad-visual.md) y
   como `#129f9f` en la fuente canónica del producto.
-- **2026-08-08** — **Avatares: amplio primero, acotar con datos**
-  ([decisión](decisiones/2026-08-08-avatares-amplio-primero.md)). Con audiencia cero, acotar
+- **2026-08-08** — **Avatares: amplio primero, acotar con datos.** Con audiencia cero, acotar
   antes de tener señal es adivinar: el contenido arranca lo más amplio posible y los cuatro
   escenarios pasan de ser el filtro de audiencia a ser la fuente del ejemplo concreto. Carolina
   se desliga de educación privada y de la vuelta a clases, y vuelve a ser la coordinadora u
@@ -147,12 +162,11 @@
   calendario, flujo de aprobación de marketing, roadmap, checklist legal y PRDs quedaron en
   palabras. La iconografía funcional de la UI del producto no cambia (la rige
   [identidad-visual.md](marca/identidad-visual.md)).
- **2026-08-06** — Nuevo headline canónico: **"Describe tu formulario y la IA lo crea"** (el
-  mensaje funcional abre en frío; "Formularios que la gente sí termina" pasa a línea de apoyo
-  — [decisión](decisiones/2026-08-06-headline-funcional.md)). Pendiente: adaptar el copy de
-  la landing en `formelia-app` y revisar las piezas sembradas del calendario con el gancho
-  nuevo.
-**2026-07-30** — Se crea Formelia HQ (`cowork/`): estructura de áreas, estrategias iniciales
+- **2026-08-06** — Nuevo headline canónico: **"Describe tu formulario y la IA lo crea"** (el
+  mensaje funcional abre en frío; "Formularios que la gente sí termina" pasa a línea de apoyo).
+  Pendiente: adaptar el copy de la landing en `formelia-app` y revisar las piezas sembradas del
+  calendario con el gancho nuevo.
+- **2026-07-30** — Se crea Formelia HQ (`cowork-formelia/`): estructura de áreas, estrategias iniciales
   por equipo y skills.
 
 ## Aprendizajes acumulados

@@ -1,8 +1,7 @@
 # Estrategia de marketing
 
-> Documento vivo del equipo de Marketing. Última actualización: 2026-08-18
-> Definida en sesión de estrategia con el founder — decisión:
-> [estrategia H2-2026](../00-core/decisiones/2026-08-04-estrategia-h2-2026.md).
+> Documento vivo del equipo de Marketing. Última actualización: 2026-08-19
+> Definida en sesión de estrategia con el founder (decisión de estrategia H2-2026, 2026-08-04).
 > Se subordina a [`00-core/posicionamiento.md`](../00-core/posicionamiento.md); los canales y
 > su medición son de [growth](../03-growth/estrategia.md); marketing posee mensaje y contenido.
 
@@ -30,7 +29,11 @@ acciones: **crear un formulario o compartir uno.**
 2. **Producto en acción (30%)** — demos ≤60s: del prompt al formulario publicado, compartir
    por WhatsApp con QR, la IA resumiendo 200 respuestas. Siempre producto real.
 3. **Build in public (20%)** — la historia del founder en primera persona: métricas reales,
-   decisiones, errores. Vive en las cuentas personales.
+   decisiones, errores. Vive en las cuentas personales, que desde el 2026-08-19 son un negocio
+   propio del founder y no una superficie que marketing pueda programar
+   ([decisión](../00-core/decisiones/2026-08-19-marca-personal-segundo-negocio.md)). El pilar
+   se sigue sirviendo desde ahí, pero con **techo de 2 piezas de video por semana** y sin
+   poder asumir su calendario.
 
 ## Superficies y cadencia (4 canales, 6 superficies)
 
@@ -38,20 +41,37 @@ acciones: **crear un formulario o compartir uno.**
 | --- | --- | --- | --- |
 | **IG @joinformelia** | Canal principal de avatares (Camila, Carolina) | 3 reels + 1 carrusel/sem + 3 stories | Reels ≤45s, carrusel educativo |
 | **TikTok @joinformelia** | Alcance frío; mismos videos que IG | 3 videos/sem (reutilizados) | Video vertical |
-| **LinkedIn personal** | Build in public + avatar Valeria | 3 posts/sem | Texto + clip o carrusel-documento |
+| **LinkedIn personal** | Build in public + avatar Valeria | 3 posts/sem (texto: no consume lote de grabación) | Texto + clip o carrusel-documento |
 | **LinkedIn @joinformelia** | Presencia de marca; reutiliza | 2 posts/sem (repurpose) | Carrusel + clip |
-| **X personal** | Build in public + avatar Diego | 4 tuits/sem | Recortes de LinkedIn, números, capturas |
-| **IG personal** | BTS y cercanía; amplifica la marca | 3 stories/sem + repost | Stories crudas |
+| **X personal** | Build in public + avatar Diego | 4 tuits/sem (texto: no consume lote de grabación) | Recortes de LinkedIn, números, capturas |
+| **IG personal** | BTS y cercanía; amplifica la marca | Historias a diario + **máximo 2 piezas de video/sem** (espejadas a TikTok personal) | Stories crudas; video natural y poco producido |
 
 **Regla de producción:** todo el video de la semana sale de **2 sesiones de grabación de
 45 min** (founder a cámara + screencast). Una pieza madre → 4–6 derivados. Nada se produce
 para una sola red.
 
-**Frontera con la marca personal:** este documento define qué aportan las superficies
-personales a la distribución de Formelia (cadencia, pilares, CTAs). La identidad personal
-del founder (narrativa, pilares propios, voz, red) se gestiona en su repo aparte
-(`../cowork-personal/`); las piezas personales se producen igualmente en el lote semanal
-compartido, etiquetadas `cuenta: personal`.
+**Frontera con la marca personal (actualizada el 2026-08-19).** Las cuentas personales del
+founder son **un segundo negocio suyo**, no una superficie de Formelia
+([decisión](../00-core/decisiones/2026-08-19-marca-personal-segundo-negocio.md)). Reparto de
+autoridad:
+
+- **Formelia manda en el tiempo.** El lote de grabación es suyo y tiene prioridad absoluta: si
+  una semana aprieta, la pieza personal se cae y no se recupera.
+- **`../cowork-personal/` manda en la agenda personal:** qué se publica, con qué pilares, con
+  qué voz y con qué cadencia (techo de 2 piezas de video/sem, registro natural y poco
+  producido).
+- **Marketing ya no puede asumir** que las cuentas personales publiquen lo que convenga a una
+  campaña. Sí puede seguir contando con el pilar de build in public, con la voz de founder en
+  historias, y con que el contenido de makers arrastra tráfico cualificado hacia la marca.
+- **La producción sigue compartida:** las piezas personales salen del mismo lote semanal,
+  etiquetadas `cuenta: personal`. **La operación comercial no:** la lista de correo, el sitio
+  `carlosescorche.com` y los productos del founder viven en
+  `../cowork-personal/04-negocio/`, con listas y dominio de envío separados de los de Formelia.
+- **Números públicos partidos:** Formelia mantiene "uso sí, dinero no". La marca personal
+  publica sus propios ingresos y suscriptores. Nunca se mezclan ni se deja inferir la cifra de
+  Formelia desde la personal.
+- **Secuencia:** nada del segundo negocio se ejecuta antes del **1-sep**, con la ventana de
+  lanzamiento (24–31 ago) cerrada.
 
 ## Semana tipo (el sistema tú + Claude)
 
@@ -66,8 +86,7 @@ compartido, etiquetadas `cuenta: personal`.
 ## Blog — en formelia.io (decidido, no Substack)
 
 - **Dónde:** `/blog` dentro de la app Next.js (MDX). El SEO y la citabilidad AI-search se
-  acumulan en dominio propio — la asimetría del negocio. (Construcción: 16–31 ago, ver
-  [roadmap](../04-producto/roadmap.md).)
+  acumulan en dominio propio — la asimetría del negocio. (Construcción: 16–31 ago.)
 - **Cadencia:** 2 artículos/sem — 1 JTBD del avatar en rotación + 1 comparativa/educación
   ("Typeform vs Formelia en pesos", "5 plantillas de ficha de ingreso").
 - **Estructura AI-search en todo artículo:** respuesta directa en el primer párrafo → paso a
@@ -129,8 +148,7 @@ idea → guion/copy → revisión 1 (apruebas el guion) → producción
 
 Claude crea las piezas vía MCP con el copy o guion dentro; el founder revisa desde el móvil,
 comenta cambios o avanza el estado; Claude aplica cambios, y solo lo aprobado pasa a
-Metricool. El `calendario-editorial.md` del repo queda como archivo estratégico — la
-operación diaria vive en Notion (una sola fuente operativa).
+Metricool. La operación diaria vive en Notion (una sola fuente operativa).
 
 **Assets (imágenes y videos) — Google Drive como almacén maestro:** los binarios NO van al
 repo (infla git) ni se suben a Notion (el plan free limita a 5MB/archivo y sus URLs firmadas
@@ -169,10 +187,12 @@ Brief en [campanas/](campanas/README.md).
 
 ## Historial de cambios
 
+- 2026-08-19 — **La marca personal pasa a ser un segundo negocio del founder**
+  ([decisión](../00-core/decisiones/2026-08-19-marca-personal-segundo-negocio.md)): frontera
+  reescrita, pilar 3 con techo de 2 piezas de video/sem, superficies personales actualizadas.
 - 2026-08-18 — Ventana de lanzamiento movida al 24–31 ago
   ([decisión](../00-core/decisiones/2026-08-18-lanzamiento-24-ago.md)).
-- 2026-08-08 — **Amplio primero, acotar con datos**
-  ([decisión](../00-core/decisiones/2026-08-08-avatares-amplio-primero.md)): los avatares
+- 2026-08-08 — **Amplio primero, acotar con datos**: los avatares
   pasan a ser escenarios de ejemplo, no filtros de audiencia. Cambian el objetivo del área, el
   pilar de educación operativa y la medición; el corte del 30-sep deja de ser automático.
 - 2026-08-08 — Aplicada la regla de marca de **cero iconos y emoji**: el flujo de aprobación

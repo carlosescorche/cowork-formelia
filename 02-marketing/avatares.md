@@ -1,7 +1,6 @@
 # Avatares — amplio primero, acotar con datos
 
-> Última actualización: 2026-08-08 · Decisión:
-> [avatares amplio primero](../00-core/decisiones/2026-08-08-avatares-amplio-primero.md)
+> Última actualización: 2026-08-08 · Decisión: avatares amplio primero (2026-08-08).
 > Sustituye el diseño del 2026-08-04 (cuatro avatares sectoriales con semanas temáticas y
 > corte forzado a dos el 30-sep).
 > Operativizan el beachhead de [`00-core/posicionamiento.md`](../00-core/posicionamiento.md).

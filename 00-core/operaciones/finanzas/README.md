@@ -2,16 +2,6 @@
 
 Números de la empresa. Sin sofisticación prematura: una verdad honesta al mes.
 
-## Estructura
-
-```
-finanzas/
-├── economia-ia.md      Modelo de costos de IA por plan (bloqueante: recalcular con precios
-│                       reales Cerebras/OpenAI y validar margen ≥70%)
-├── cierres/            Cierre mensual: AAAA-MM.md (MRR, costos, burn, runway, notas)
-└── proveedores.md      Lista de proveedores: plan, costo mensual, riesgo, plan B
-```
-
 ## Cierre mensual (plantilla para `cierres/AAAA-MM.md`)
 
 | Concepto | Valor |
@@ -34,6 +24,6 @@ finanzas/
 
 ## Pendiente crítico (agosto 2026)
 
-- [ ] `economia-ia.md` con precios reales por token de Cerebras y OpenAI, costo por crédito
+- [ ] **Economía de IA**: precios reales por token de Cerebras y OpenAI, costo por crédito
   (1 crédito = 1.000 tokens) y margen por plan (Free 500 / Pro 2.500 / Team 4.500 créditos
   efectivos al mes). Decide si el pricing actual es sostenible ANTES de escalar adquisición.

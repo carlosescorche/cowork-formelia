@@ -1,6 +1,6 @@
 # Voz y tono
 
-> Última actualización: 2026-08-14
+> Última actualización: 2026-08-19
 
 ## La voz de Formelia
 
@@ -66,16 +66,28 @@ hype-bro de IA. **Cercana, directa, honesta.**
 | Build in public (X/LinkedIn) | Franco, con datos reales | "Mes 1: 300 registros, 41% activación. Lo que funcionó y lo que no →" |
 | Founder a cámara (historias) | **Contado, no vendido:** proceso y propósito en primera persona; sin preguntas retóricas ni hooks de anuncio (esos son para reel/TikTok ante desconocidos) | "Llevo 8 meses construyendo esto. Déjame contarte por qué existe." |
 
-## Voz por cuenta (desde 2026-08-04 — cuentas personales + marca en paralelo)
+## Voz por cuenta (desde 2026-08-04; actualizada el 2026-08-19)
 
 | Cuenta | Voz | Qué publica |
 | --- | --- | --- |
-| LinkedIn / X / IG **personales** (founder) | **Primera persona.** Contado, no vendido. Números reales, decisiones, errores. Sin CTA duro en cada pieza — la confianza es el producto. | Build in public, educación para consultores (Valeria/Diego), BTS |
+| LinkedIn / X / IG **personales** (founder) | **Primera persona.** Contado, no vendido. Números reales, decisiones, errores. Sin CTA duro en cada pieza — la confianza es el producto. En video: **natural y poco producido**, no formato anuncio. | Cómo construye con IA (pilar principal), decisiones de Formelia, sistemas de trabajar solo, educación para consultores (Valeria/Diego), BTS |
 | IG / TikTok / LinkedIn **@joinformelia** | **Colega que enseña.** Imperativo, útil, dolor → solución, CTA "Crear formulario gratis". Nunca habla en "yo". | Educación por avatar (Camila/Carolina), demos, plantillas |
 
 Regla de frontera: la marca nunca cuenta la vida del founder; el founder nunca suena a
 anuncio. Cuando una pieza cruza (p. ej. el lanzamiento), el founder cuenta la historia y la
 marca muestra el producto.
+
+**Desde el 2026-08-19 las cuentas personales son un segundo negocio del founder**
+([decisión](../decisiones/2026-08-19-marca-personal-segundo-negocio.md)); su identidad y sus
+pilares se gobiernan en `../../cowork-personal/`. Tres reglas que afectan al lenguaje:
+
+- **Números partidos.** Formelia mantiene "uso sí, dinero no". La marca personal sí publica
+  sus propios ingresos y suscriptores. Una pieza nunca mezcla las dos cifras ni deja inferir
+  la de Formelia desde la personal.
+- **Nunca "plan B".** El founder jamás presenta su marca personal como cobertura por si
+  Formelia falla. Framing canónico: "enseño el sistema con el que construyo".
+- **Formelia es la prueba, no el pitch.** En el contenido personal la empresa aparece como
+  evidencia de que el sistema funciona, nunca como anuncio.
 
 ## Qué NO decir jamás
 

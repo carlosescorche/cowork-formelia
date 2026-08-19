@@ -26,17 +26,14 @@ arquitectura. El producto y su documentación técnica viven en
 ## Estructura
 
 ```
-cowork/
+cowork-formelia/
 ├── 00-core/            Dirección (CEO): propósito, visión, estrategia, posicionamiento,
 │                       métricas, memoria viva, log de decisiones — e incluye:
 │   ├── marca/          Identidad de marca: estrategia, identidad visual, voz y tono
 │   └── operaciones/    Legal y finanzas: bloqueantes de lanzamiento, economía de IA
 ├── 01-diseno/          Diseño: producción de piezas, plantillas y assets (ejecuta la marca)
-├── 02-marketing/       Marketing: estrategia (en reinicio), calendario editorial, redes,
-│                       campañas, blog/SEO
+├── 02-marketing/       Marketing: estrategia, avatares, redes, campañas, blog/SEO
 ├── 03-growth/          Distribución y crecimiento: canales, experimentos, partners, comunidades
-├── 04-producto/        Producto: PRDs, priorización, UX (el código vive en formelia-app)
-├── 05-arquitectura/    Arquitectura: specs técnicos, ADRs, seguridad, costos de IA
 └── .claude/skills/     Un skill (rol experto) por equipo
 ```
 
@@ -48,8 +45,6 @@ cowork/
 | `/diseno` | Diseñador | `01-diseno/` |
 | `/marketing` | Estratega de marketing y contenidos | `02-marketing/` |
 | `/growth` | Growth lead | `03-growth/` |
-| `/producto` | Product manager | `04-producto/` |
-| `/arquitectura` | Arquitecto de software | `05-arquitectura/` |
 
 ## Relación con `formelia-app`
 
