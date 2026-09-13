@@ -41,6 +41,22 @@
 
 ## Últimos movimientos
 
+- **2026-08-25** — **Nuevo reel de producto y limpieza del lote de video.** Aprobado el brief de
+  [«Sin escribir ni una sola pregunta»](../02-marketing/redes/instagram/2026-08-25-reel-sin-escribir-preguntas/brief.md)
+  (55 s, pilar producto en acción, screencast con voz en off): del prompt en una frase al
+  formulario publicado y compartido por enlace o QR, con una escuela de natación como escena.
+  Tres decisiones del founder en la sesión. **Esta pieza abre el lote** e «Imposible desde el
+  teléfono» pasa a segunda. **La CTA vuelve a la vía estándar** ("entra a formelia.io y crea el
+  tuyo gratis") porque no hay automatización de mensajes directos montada: la línea hablada no
+  nombra el enlace del perfil, así una sola grabación sirve en IG y en TikTok y lo único que
+  cambia por red es el rótulo de la tarjeta de cierre. Y **«La pregunta cara» se elimina**;
+  su brief ya no está en el repo.
+  Correcciones de voz que conviene no repetir: el guion se iba a primera persona a mitad
+  ("no le digo", "te mando") cuando `@joinformelia` nunca habla en "yo", y "representante" es
+  regionalismo para el arranque MX+CO — ahora "quien lo inscribe". Pendiente de verificar en el
+  rodaje: el "en segundos" de la generación; si tarda más, la línea pasa a "en menos de un
+  minuto".
+
 - **2026-08-19** — **La marca personal del founder pasa a ser un segundo negocio**
   ([decisión](decisiones/2026-08-19-marca-personal-segundo-negocio.md)). El founder quiere una
   segunda fuente de ingreso a largo plazo (newsletter e infoproductos para makers) con Formelia
@@ -56,8 +72,10 @@
   convenga a una campaña. **Lo que sí:** el pilar de build in public, la voz de founder en
   historias, y el arrastre de tráfico cualificado del contenido de makers.
 - **2026-08-17** — **Escenas animadas del reel «La pregunta cara» exportadas**
+  *(reel cancelado el 2026-08-25; el brief ya no existe en el repo y estas escenas no
+  se van a montar. Los MP4 siguen en `assets/`, que está fuera de git.)*
   (`assets/2026-08/reel-pregunta-cara-escenas/`): tres MP4 1080×1920 a 30 fps para los
-  bloques 22-29 y 34-42 del [brief](../02-marketing/redes/instagram/2026-08-16-reel-pregunta-cara/brief.md),
+  bloques 22-29 y 34-42 de su brief (ya eliminado),
   aprobados por el founder tras cinco rondas de iteración en chat. Escena 1 (10 s): la misma
   pregunta como texto libre (teclado iPhone en gris, cursor) y como selector (radio cards,
   selección teal, pantalla de gracias); escena 2 (4 s): el gráfico real de abandono por
@@ -87,8 +105,8 @@
   `@joinformelia` (pilar educación operativa, réplica en TikTok):
   [imposible desde el teléfono](../02-marketing/redes/instagram/2026-08-16-reel-imposible-desde-el-telefono/brief.md)
   (43 s, el orden de los campos espanta a quien responde) y
-  [la pregunta cara](../02-marketing/redes/instagram/2026-08-16-reel-pregunta-cara/brief.md)
-  (45 s, la pregunta de texto libre que cuesta respuestas). Cada brief lleva guion literal,
+  «la pregunta cara» (45 s, la pregunta de texto libre que cuesta respuestas; **cancelado el
+  2026-08-25**, brief eliminado del repo). Cada brief lleva guion literal,
   tabla de producción escena a escena, ganchos alternativos y auditoría. Ajuste de honestidad
   hecho en sesión: la moraleja de "la pregunta cara" no promete señalado automático — muestra
   el modal de conversión por pregunta y el cambio de campo pidiéndoselo a la IA, que es lo que

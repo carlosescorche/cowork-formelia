@@ -10,6 +10,9 @@
 - Duración: 43 segundos
 - Objetivo: signups por UTM (no vistas — techo realista por audiencia profesional)
 - CTA única: "Crear formulario gratis, enlace en el perfil"
+- **Orden de publicación: segunda del lote.** Va después de
+  [«Sin escribir ni una sola pregunta»](../2026-08-25-reel-sin-escribir-preguntas/brief.md)
+  (decidido por el founder el 2026-08-25).
 - UTM: `utm_source=instagram&utm_medium=social&utm_campaign=reel-imposible-desde-el-telefono`
   (la réplica cambia `utm_source=tiktok`)
 
